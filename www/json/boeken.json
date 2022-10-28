@@ -1,0 +1,20 @@
+{
+	"boeken" : [
+		{ 
+			"id" : "1", 		
+			"title" : "Jamie's Super Food", 							
+			"image" : "placeholder.jpg", 						
+			"prijs" : "5", 		
+			"description" : "Heerlijk Gourmet Gold kattenvoer van Jamie."
+		},
+		
+		{ 
+			"id" : "2", 		
+			"title" : "Jamie's Super Food", 							
+			"image" : "placeholder.jpg", 						
+			"prijs" : "5", 		
+			"description" : "Heerlijk Gourmet Gold kattenvoer van Jamie."
+		} 
+     ]
+    }
+    
