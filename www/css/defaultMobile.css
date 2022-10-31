@@ -5,6 +5,22 @@ body{
     font-family: "Raleway medium" ;
     margin:0 auto;
 }
+.no-JS{
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-image: url("../images/placeholder.png");
+    background-repeat: no-repeat;
+    background-size:initial;
+    background-clip: border-box;
+    background-color: cornflowerblue;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 4rem;
+
+
+}
 nav{
     position: relative;
     width: 100%;
