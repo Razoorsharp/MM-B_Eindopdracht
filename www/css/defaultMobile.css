@@ -163,7 +163,34 @@ button{
     flex-direction: column;
    
 }
+/* Artikel kaart */
+.artikelCard{
+position: relative;
+border: 1px black solid;
+width: 90%;
 
+}
+.artikelCard img{
+    width: 100%;
+    height: 500px;
+}
+.artikelCard button{
+    width: 70%;
+    position: absolute;
+    bottom: 10%;
+    z-index: 6;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+}
+.artikelcard > {
+margin-top: 0.5rem;
+}
+
+
+.artikelCard:hover{
+    box-shadow: 5px -5px #88888850
+}
  /* Recepten card */
 
  .receptCard{
