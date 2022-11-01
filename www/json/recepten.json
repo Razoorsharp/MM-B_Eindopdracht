@@ -1,0 +1,26 @@
+[
+    { 
+        "id" : "1", 		
+        "title" : "bami soep", 
+        "ingredienten" :["1 mienestje", "1 bosje lente ui", "1 bosje koriander", "1 chillipeper", "misoboillion"],  
+        "tekstComplete": " flikker alles in een pan bla bla Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget placerat nisl. Etiam vitae dui nec ipsum tempor vehicula. Donec est enim, finibus vitae lacinia in, lacinia quis velit. Donec vel convallis sapien, at scelerisque mauris. Etiam sit amet hendrerit libero, quis tincidunt dolor. Mauris et egestas neque. Vestibulum pulvinar eros a urna elementum dictum. Nulla tempus, odio in ullamcorper fermentum, quam dui maximus eros, vel pulvinar enim ipsum vitae.", 							
+        "image" : "images/placeholder.png", 
+        "buttonTekst" : "bami soep maken"
+    },
+    { 
+        "id" : "2", 		
+        "title" : "lekkere soep", 
+        "ingredienten" :["doe maar wat","1 mienestje", "1 bosje lente ui", "1 bosje koriander", "1 chillipeper", "misoboillion"],  
+        "tekstComplete": " flikker alles in een pan bla bla Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget placerat nisl. Etiam vitae dui nec ipsum tempor vehicula. Donec est enim, finibus vitae lacinia in, lacinia quis velit. Donec vel convallis sapien, at scelerisque mauris. Etiam sit amet hendrerit libero, quis tincidunt dolor. Mauris et egestas neque. Vestibulum pulvinar eros a urna elementum dictum. Nulla tempus, odio in ullamcorper fermentum, quam dui maximus eros, vel pulvinar enim ipsum vitae.", 							
+        "image" : "images/placeholder.png", 
+        "buttonTekst" : "lekkere soep maken"
+    },
+    { 
+        "id" : "3", 		
+        "title" : "vieze soep", 
+        "ingredienten" :["kouwe katten kak","1 mienestje", "1 bosje lente ui", "1 bosje koriander", "1 chillipeper", "misoboillion"],  
+        "tekstComplete": " flikker alles in een pan bla bla Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget placerat nisl. Etiam vitae dui nec ipsum tempor vehicula. Donec est enim, finibus vitae lacinia in, lacinia quis velit. Donec vel convallis sapien, at scelerisque mauris. Etiam sit amet hendrerit libero, quis tincidunt dolor. Mauris et egestas neque. Vestibulum pulvinar eros a urna elementum dictum. Nulla tempus, odio in ullamcorper fermentum, quam dui maximus eros, vel pulvinar enim ipsum vitae.", 							
+        "image" : "images/placeholder.png", 
+        "buttonTekst" : "vieze soep maken"
+    }
+]
