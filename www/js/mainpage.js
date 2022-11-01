@@ -5,9 +5,11 @@ $(document).ready(function(){
 
 $(".no-JS").remove();   // removes warning div for the site if JS is disabled. 
 
-$.getJSON("../json/boeken.json", function(data){
+$.getJSON("./json/boeken.json", function(data){
     var boeken_markup = '';
+    console.log(data);
     $.each(data, function(key, value){
+        console.log(value);
         boeken_markup += '<<div id="boekenCardHolder"><div class="card">';        
         boeken_markup += '<img src="'+ value.image +'" alt="">'; 
         boeken_markup += '<p class="boekPrijs">'+ value.prijs +'</p>';
