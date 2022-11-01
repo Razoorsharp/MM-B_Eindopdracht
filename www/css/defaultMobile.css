@@ -147,9 +147,9 @@ button{
 
 .homeBoeken button{
     position: absolute;
-    bottom: 20%;
+    bottom: 0;
     left: 50%;
-    width: 70%;
+    width: 100%;
     transform: translate(-50%, 50% );
 }
 .homeBoeken #boekPrijs{
