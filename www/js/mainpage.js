@@ -44,14 +44,16 @@ $.getJSON("./json/artikellen.json", function(data){
 // recepten Card ceator @note: nog afmaken
 $.getJSON("./json/recepten.json", function(data){
     var receptenMarkup = '';
-    console.log("gedraaid?");
+    
     $.each(data, function(key, value){
         console.log(value);
         receptenMarkup += ' <div class="receptCard"><div class="cardSpacer"><div class="receptHead">';        
         receptenMarkup += '<h2>'+ value.title +'</h2>';
-        receptenMarkup += '<ul><li id="receptHoofdIngr">.</li><li id="receptGerei">.</li><li id="receptTijd">.</li></ul>'; // Maak icons aan en run daarna en functie
+        let soortGerecht = value.hoofdIngredient;
+        receptenMarkup += '<ul><li class="receptHoofdIngr">'+ receptIconPlacement(soortGerecht); +'</li><li class="receptGerei">.</li><li class="receptTijd">.</li></ul>'; // Maak icons aan en run daarna en functie
+        
         // icons function
-        receptIconPlacement();
+        receptenMarkup += receptIconPlacement(soortGerecht);
         receptenMarkup += '</div>';
         receptenMarkup += '<div class="receptText">';
         receptenMarkup += '<ul>';
@@ -67,16 +69,13 @@ $.getJSON("./json/recepten.json", function(data){
     $('.receptCardHolder').append(receptenMarkup);
 });
 
- function receptIconPlacement(){
+ function receptIconPlacement(i){
      
-     $.getJSON("./json/recepten.json", function(data){
-         // data[1].hoofdIngredient
-         
-
-         if(data[1].hoofdIngredient == "gevolgelte"){
-            $( "#receptHoofdIngr" ).html('<img src="images/icons/32px/61.png"');
-         }
-     });
+     console.log(i);
+    if(i == "gevogelte"){
+        return '<img src="images/icons/32px/61.png"';
+    }
+     
     //  if (this.value.ingredienten)
  }
 

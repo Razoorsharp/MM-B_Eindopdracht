@@ -246,13 +246,13 @@ margin-top: 0.5rem;
  .receptHead li{
      font-size:0px;
  }
- .receptHead li::after{
+ /* .receptHead li::after{
     font-family: "Font Awesome 5 Free"; 
     font-weight: 600;
     font-size: 1rem;
     margin-left: .5rem;
- }
- .receptHead li:nth-child(1)::after{    
+ } */
+ /* .receptHead li:nth-child(1)::after{    
     content:"\f578";
  }
  .receptHead li:nth-child(2)::after{
@@ -264,7 +264,7 @@ margin-top: 0.5rem;
  .receptText{
     
 
- }
+ } */
  .receptText ul{
     margin: .5rem 0;
  }
