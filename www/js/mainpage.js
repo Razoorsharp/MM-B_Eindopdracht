@@ -72,8 +72,9 @@ $.getJSON("./json/recepten.json", function(data){
  function receptIconPlacement(i){
      
      console.log(i);
-    if(i == "gevogelte"){
-        return '<img src="images/icons/32px/61.png"';
+    if(i == "gevogelte"){       
+        let html = '<img src="images/icons/32px/61.png">'
+        return html;
     }
      
     //  if (this.value.ingredienten)
