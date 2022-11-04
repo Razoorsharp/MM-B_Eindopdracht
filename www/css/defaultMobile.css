@@ -177,8 +177,9 @@ button{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-   
+ 
 }
+
 /* Artikel kaart */
 .artikelCard{
 position: relative;
@@ -279,25 +280,7 @@ margin-top: 0.5rem;
     transform: translate(10%, 20%);
     content: "120 min";
  }
- /* .receptHead li::after{
-    font-family: "Font Awesome 5 Free"; 
-    font-weight: 600;
-    font-size: 1rem;
-    margin-left: .5rem;
- } */
- /* .receptHead li:nth-child(1)::after{    
-    content:"\f578";
- }
- .receptHead li:nth-child(2)::after{
-    content:"\f578";
- }
- .receptHead li:nth-child(3)::after{
-    content:"\f578";
- }
- .receptText{
-    
-
- } */
+ 
  .receptText ul{
     margin: .5rem 0;
  }
@@ -312,4 +295,26 @@ margin-top: 0.5rem;
  .receptText img{
     max-width: 300px;
     height: 500px;
+}
+  /* OVER ONS GEDEELTE  */
+.homeOver{
+    width:86%;   
+    display: flex;
+    align-content: center;
+    justify-items: center;
+    position: relative;
+    margin:  1rem auto;
+    margin
+   
+}
+.homeOver p{
+    margin-bottom: 1rem;
+}
+.homeOver p{
+    margin-bottom: 1rem;
+}
+.homeOver h2{
+    margin-bottom: 1rem;
+    color: ;
+
 }

@@ -59,10 +59,8 @@ $.getJSON("./json/recepten.json", function(data){
         let soortGerei = value.benodigdheden;
         let soortGerecht = value.hoofdIngredient;
         let bereidTijd = value.tijd;
-        // receptenMarkup += '<ul><li class="receptGerei">.</li><li class="receptHoofdIngr">'+ receptIconPlacement(soortGerecht); +'</li><li class="receptTijd">.</li></ul>'; // Maak icons aan en run daarna en functie
-         receptenMarkup += receptIconPlacement(soortGerei,soortGerecht,bereidTijd);
-        // icons function
-      
+        // icons function, berei gerecht en time bepaald door nummers in de Json, zie handleiding. 
+        receptenMarkup += receptIconPlacement(soortGerei,soortGerecht,bereidTijd); 
         receptenMarkup += '</div>';
         receptenMarkup += '<div class="receptText">';
         receptenMarkup += '<ul>';
@@ -89,20 +87,6 @@ $.getJSON("./json/recepten.json", function(data){
 
      return iconGerei+iconGerecht+iconTijd;
 
-
-//      console.log(i);
-//         if(i == "gevogelte"){       
-//     let html = '<img src="images/icons/'+ pageResForIcons +'/61.png">'
-//         return html;
-//     }else if(i == "vlees"){               
-//             let html = '<img src="images/icons/'+ pageResForIcons +'/129.png">'
-//             return html;
-//     }else if(i == "vis"){               
-//         let html = '<img src="images/icons/'+ pageResForIcons +'/127.png">'
-//         return html;
-// }
-     
-    //  if (this.value.ingredienten)
  }
 
 }); // end/closing of script
