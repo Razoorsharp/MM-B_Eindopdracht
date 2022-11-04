@@ -246,6 +246,15 @@ margin-top: 0.5rem;
  .receptHead li{
      font-size:0px;
  }
+ .receptTime30:after{
+    content: "30 min";
+ }
+ .receptTime60:after{
+    content: "60 min";
+ }
+ .receptTime120:after{
+    content: "120 min";
+ }
  /* .receptHead li::after{
     font-family: "Font Awesome 5 Free"; 
     font-weight: 600;

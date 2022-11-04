@@ -1,0 +1,25 @@
+Om de juiste iconen bij het gerecht te keijgen moet men rekening houdenmet de nummering van het gerei en hoofd ingredient. 
+Gezien de iconen genummerd zijn moet je het nummer invoeren zodat het juiste icoon tevoorschijn komt. 
+Voorbeeld
+Peer	1
+Appel	2
+Ananas	3
+druiven	4
+Banaan	7
+perzik	8
+Meloen	9
+Durian	10
+Citroen	13
+Sinasappel	14
+Mango	20
+Knoflook	38
+
+Deze nummers corresponderen met icoon in de images/icon/*resolutie*/ map 
+Resolutie wordt automatisch geselecteerd opbasis van de breakpoints in de media, hier hoef je niet naar te kijken. 
+Wanneer er nieuwe icons worden toegevoegd moeten deze 32, 64, of 128 px zijn en aan de corresponderende icons map worden toegevoegd en een nog niet bezet nummer toegewezen moeten krijgen  in .png formaat. 
+.
+Het script zal dan de juiste iconen met de gekozen nummers verwerken in de recepten kaart. 
+	
+    BEREIDING
+Bereiding kent vlakken van 30 minuten. Rond deze af naar eigen inzicht. in de Json staan de tijden in minuten aangeduid.  
+De tekst onder de standaard klok wordt via CSS ingegeven in classes. Ergo, wijk nooit af van 30, 60, en als hoogste 120 minuten. 
