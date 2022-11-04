@@ -53,13 +53,13 @@ $.getJSON("./json/recepten.json", function(data){
     
     $.each(data, function(key, value){
         console.log(value);
-        receptenMarkup += ' <div class="receptCard"><div class="cardSpacer"><div class="receptHead">';        
+        receptenMarkup += '<div class="receptCard"><div class="cardSpacer"><div class="receptHead">';        
         receptenMarkup += '<h2>'+ value.title +'</h2>';
         // defineer variabelen voor de juiste iconen gebaseerd op de Json
         let soortGerei = value.benodigdheden;
         let soortGerecht = value.hoofdIngredient;
         let bereidTijd = value.tijd;
-        // receptenMarkup += '<ul>><li class="receptGerei">.</li><li class="receptHoofdIngr">'+ receptIconPlacement(soortGerecht); +'</li><li class="receptTijd">.</li></ul>'; // Maak icons aan en run daarna en functie
+        // receptenMarkup += '<ul><li class="receptGerei">.</li><li class="receptHoofdIngr">'+ receptIconPlacement(soortGerecht); +'</li><li class="receptTijd">.</li></ul>'; // Maak icons aan en run daarna en functie
          receptenMarkup += receptIconPlacement(soortGerei,soortGerecht,bereidTijd);
         // icons function
       
@@ -79,15 +79,13 @@ $.getJSON("./json/recepten.json", function(data){
 });
         // receptIconPLacement function. i = Sooftgerecht in de recepten constructor. en plaatst het benodigde icoon per recept card er in. 
  function receptIconPlacement(nrGerei,nrGerecht,nrTijd){ 
-     iconGerei = '<ul>><li class="receptGerei">.</li>';
-     iconGerecht = '</li><li class="receptHoofdIngr"><img src="images/icons/'+ pageResForIcons +'/61.png"></li>';
-     iconTijd = '<li class="receptTijd">.</li></ul>';
+  
      // icon gerei defineren. 
-         iconGerei = '<ul>><li class="receptGerei"><img src="images/icons/'+ pageResForIcons +'/'+ nrGerei +'.png"></li>';
+        iconGerei = '<ul><li class="receptGerei"><img src="images/icons/'+ pageResForIcons +'/'+ nrGerei +'.png"></li>';
     // icon hoofd ingredient defineren
         iconGerecht = '</li><li class="receptHoofdIngr"><img src="images/icons/'+ pageResForIcons +'/'+ nrGerecht +'.png"></li>';
     // icon en tekst tijd 
-    iconTijd = '<li class="receptTime'+ nrTijd +'"><img src="images/icons/'+ pageResForIcons +'/163.png"></li></ul>'
+        iconTijd = '<li class="recentTime receptTime'+ nrTijd +'"><img src="images/icons/'+ pageResForIcons +'/163.png"></li></ul>'
 
      return iconGerei+iconGerecht+iconTijd;
 
