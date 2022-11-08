@@ -88,7 +88,7 @@ background-color: #FDB822;
 nav li:nth-child(9){
 border: none;
 }    
-.card{
+.boekenCard{
     /* position: relative;
     border:1px black solid;
     margin: 2px 0;
@@ -101,6 +101,7 @@ border: none;
     position: relative;
     margin:  auto;
     border: 1px black solid;
+    max-width: 350px;
     
 }
 .cardContent{
@@ -182,12 +183,15 @@ button{
 
 /* Artikel kaart */
 .artikelCard{
-position: relative;
-border: 1px black solid;
-width: 90%;
-margin: 0 auto;
-margin-bottom: 1rem;
-
+    width:90%;   
+    display: flex;
+    align-content: center;
+    justify-items: center;
+    position: relative;
+    margin:  0 auto;
+    border: 1px black solid;
+    max-width: 350px;
+   
 }
 .artikelCard img{
     width: 100%;
@@ -211,7 +215,10 @@ margin-top: 0.5rem;
     box-shadow: 5px -5px #88888850
 }
  /* Recepten card */
-
+.receptCardHolder{
+    width:100%;
+    margin: 0 auto;
+}
  .receptCard{
     width:90%;   
     display: flex;
@@ -220,6 +227,7 @@ margin-top: 0.5rem;
     position: relative;
     margin:  auto;
     border: 1px black solid;
+    max-width: 350px;
 
  }
  .receptCard:hover{
@@ -318,3 +326,5 @@ margin-top: 0.5rem;
    
 
 }
+
+
