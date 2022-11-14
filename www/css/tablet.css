@@ -1,4 +1,28 @@
 @media only screen and (min-width: 768px){
+.boekenCard{
+    max-width: 750px;
+}
 
+.artikelCard{
+    max-width: 750px;
+}
+.homeRecepten{
+    width: 90%;
+   
+
+}
+.receptCardHolder{
+    display: grid;
+    grid-template-areas: "cardOne cardTwo";
+    gap: 1rem;   
     
+}
+.receptCardHolder:nth-child(even) .receptCard{
+    grid-area: "cardOne";
+    gap: 1rem;    
+    }
+.receptCardHolder:nth-child(odd) .receptCard{
+grid-area: "cardTwo";
+gap: 1rem;    
+}
 }

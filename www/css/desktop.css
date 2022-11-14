@@ -1,0 +1,32 @@
+@media only screen and (min-width: 1024px){
+    .boekenCard{
+        max-width: 750px;
+    }
+    
+    .artikelCard{
+        max-width: 750px;
+    }
+    .homeRecepten{
+        width: 90%;
+           
+    }
+    .receptCardHolder{
+        display: grid;
+        grid-template-areas: "cardOne cardTwo cardThree";
+        gap: 1rem;   
+        
+    }
+    .artikelCard:nth-child(1){
+
+    }
+    .artikelCard:nth-child(2){
+
+    }
+    .artikelCard:nth-child(3){
+
+    }
+    .artikelCard:nth-child(1){
+
+    }
+    
+    }
