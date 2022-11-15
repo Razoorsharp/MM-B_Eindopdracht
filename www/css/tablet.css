@@ -11,6 +11,8 @@
    
 
 }
+
+
 .receptCardHolder{
     display: grid;
     grid-template-areas: "rCardOne rCardTwo";
@@ -25,5 +27,6 @@
 grid-area: "rCardTwo";
 gap: 1rem;    
 }
+.homeOver image
 
 }

@@ -28,7 +28,7 @@ $.getJSON("./json/boeken.json", function(data){
         boekenMarkup += '<button>'+ value.buttonName +'</button>';
         boekenMarkup += '</div></div></div>';    
     });
-    $('.homeBoeken').append(boekenMarkup);
+    $('.boekenCardHolder').append(boekenMarkup);
 });
 
 // Artikellen Card ceator

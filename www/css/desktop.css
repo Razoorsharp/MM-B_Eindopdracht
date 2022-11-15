@@ -10,28 +10,33 @@
         width: 90%;
            
     }
+        /* Boek Card positions */
+    .boekenCardHolder{
+        display: grid;
+        grid-template-areas: "bCardOne bCardTwo bCardThree";
+        gap: 1rem;   
+    }
+    .boekenCardHolder:nth-child(1){
+        grid-area: "bCardOne";
+        gap: 1rem;
+    }
+    .boekenCardHolder:nth-child(2){
+        grid-area: "bCardTwo";
+        gap: 1rem;
+    }
+    .boekenCardHolder:nth-child(3){
+        grid-area: "bCardThree";
+        gap: 1rem;
+    }
+
+        /* Recept card positions */
     .receptCardHolder{
         display: grid;
         grid-template-areas: "rCardOne rCardTwo rCardThree";
         gap: 0rem;   
         
     }
-    .artikelCardHolder{
-        display: grid;
-        grid-template-areas: "aCardOne aCardTwo";
-    }
-   
-    .artikelCard:nth-child(1){
-        grid-area: "aCardOne";
-
-    }
-    .artikelCard:nth-child(2){
-        grid-area: "aCardTwo";
     
-    }
-    .artikelCard:nth-child(n+3){
-        display:none;
-    }
     .receptCardHolder:nth-child(1) .receptCard{
     grid-area: "rCardTwo";
     gap: 1rem;    
@@ -44,4 +49,26 @@
         grid-area: "rCardThree";
         gap: 1rem;    
         }
+        /*  Artikel card positions */
+    .artikelCardHolder{
+        display: grid;
+        grid-template-areas: "aCardOne aCardTwo";
+    }
+
+    .receptText img {
+        max-width: 263px;
+        height: 376px;
+    }
+    
+    .artikelCard:nth-child(1){
+        grid-area: "aCardOne";
+
+    }
+    .artikelCard:nth-child(2){
+        grid-area: "aCardTwo";
+    
+    }
+    .artikelCard:nth-child(n+3){
+        display:none;
+    }
 }
