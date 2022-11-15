@@ -79,7 +79,7 @@ $.getJSON("./json/recepten.json", function(data){
  function receptIconPlacement(nrGerei,nrGerecht,nrTijd){ 
   
      // icon gerei defineren. 
-        iconGerei = '<ul><li class="receptGerei"><img src="i mages/icons/'+ pageResForIcons +'/'+ nrGerei +'.png"></li>';
+        iconGerei = '<ul><li class="receptGerei"><img src="images/icons/'+ pageResForIcons +'/'+ nrGerei +'.png"></li>';
     // icon hoofd ingredient defineren
         iconGerecht = '</li><li class="receptHoofdIngr"><img src="images/icons/'+ pageResForIcons +'/'+ nrGerecht +'.png"></li>';
     // icon en tekst tijd 

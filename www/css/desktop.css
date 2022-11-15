@@ -12,21 +12,36 @@
     }
     .receptCardHolder{
         display: grid;
-        grid-template-areas: "cardOne cardTwo cardThree";
-        gap: 1rem;   
+        grid-template-areas: "rCardOne rCardTwo rCardThree";
+        gap: 0rem;   
         
     }
+    .artikelCardHolder{
+        display: grid;
+        grid-template-areas: "aCardOne aCardTwo";
+    }
+   
     .artikelCard:nth-child(1){
+        grid-area: "aCardOne";
 
     }
     .artikelCard:nth-child(2){
-
-    }
-    .artikelCard:nth-child(3){
-
-    }
-    .artikelCard:nth-child(1){
-
-    }
+        grid-area: "aCardTwo";
     
     }
+    .artikelCard:nth-child(n+3){
+        display:none;
+    }
+    .receptCardHolder:nth-child(1) .receptCard{
+    grid-area: "rCardTwo";
+    gap: 1rem;    
+    }
+    .receptCardHolder:nth-child(2) .receptCard{
+    grid-area: "rCardTwo";
+    gap: 1rem;    
+    }
+    .receptCardHolder:nth-child(3) .receptCard{
+        grid-area: "rCardThree";
+        gap: 1rem;    
+        }
+}
