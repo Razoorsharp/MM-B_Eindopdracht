@@ -20,6 +20,9 @@ a:active{
 li{
     list-style-type: none;
 }
+img{
+    width:20%;
+}
 /* footer positioning */
 
 @media only screen and (min-width: 768px){
