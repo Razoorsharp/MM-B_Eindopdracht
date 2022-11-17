@@ -36,16 +36,44 @@ footer{
     transform: translate(0, -50%);
     font-size: 2rem;
     margin-right: 1rem;
-      
 }
-.footerIconsP p:nth-child(1)::after{
+.footerIconsP a:nth-child(1)::after{
     font-family: "FontAwesome";
-    content:"\f007";
+    content:"\f082";
 
 }
-.footerIconsP p:nth-child(2)::after{
+.footerIconsP a:nth-child(2)::after{
     font-family: "FontAwesome";
-    content:"\f07a";  
+    content:"\f099";  
+}
+.footerIconsP a:nth-child(3)::after{
+    font-family: "FontAwesome";
+    content:"\f167";  
+}
+
+.footerText .footerLinks{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+.footerText .footerContact{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+.footerCopyright{
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    
+}
+.footerContact{
+    text-align: right;
+    font-weight: bolder;
 }
 /* .footerIconsP:nth-child(2)::after{
     content:"\2630";
@@ -53,21 +81,21 @@ footer{
 
 
 
-a{
+footer a{
     text-decoration:none;
      color:inherit;
 }
-a:hover{
+footer a:hover{
     font-size: 2.3rem;
 }
-a:active{
+footer a:active{
     color: #D98a3f;}
 
-li{
+footer li{
     list-style-type: none;
 
 }
-ul{
+footer ul{
     padding: 0;
 }
 
