@@ -21,11 +21,13 @@ body{
 
 
 }
+    /* start navigation breakpoint */
+@media only screen and (max-width: 767px){
 nav{
     position: relative;
     width: 100%;
-    height:100px;
-    background-color: gray;
+    height:5vh;
+    background-color: rgba(0, 0, 0,75);
    
 }
 #showMenu{
@@ -88,6 +90,10 @@ background-color: #FDB822;
 nav li:nth-child(9){
 border: none;
 }    
+
+} 
+/* end of navigation breakpoint */
+
 .boekenCard{
     /* position: relative;
     border:1px black solid;
@@ -220,8 +226,7 @@ margin-top: 0.5rem;
     margin: 0 auto;
 }
  .receptCard{
-    width:90%;  
-    height:100%; 
+
     display: flex;
     align-content: center;
     justify-items: center;
@@ -302,8 +307,7 @@ margin-top: 0.5rem;
      margin-top: 1rem;
  }
  .receptText img{
-    max-width: 300px;
-    height: 500px;
+   
 }
   /* OVER ONS GEDEELTE  */
 .homeOver{
@@ -316,6 +320,7 @@ margin-top: 0.5rem;
     
    
 }
+
 .homeOver p{
     margin-bottom: 1rem;
 }
@@ -326,6 +331,12 @@ margin-top: 0.5rem;
     margin-bottom: 1rem;
    
 
+}
+
+footer{
+    overflow: visible;
+    width: 100%;
+    height: 100%;
 }
 
 

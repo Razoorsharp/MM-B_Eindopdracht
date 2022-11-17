@@ -27,6 +27,9 @@
 grid-area: "rCardTwo";
 gap: 1rem;    
 }
-.homeOver image
+.homeOver img{
+    float: left;
+    width:50%;
+}
 
 }
