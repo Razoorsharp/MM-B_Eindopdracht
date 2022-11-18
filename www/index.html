@@ -27,8 +27,10 @@
         <nav>
             <label for="showMenu" id="showMenuLabel"></label>
 			<input type="checkbox" id="showMenu" role="button">
+            <div class=navButtons>
             <button class="loginButton"></button>
             <button class="cartButton"></button>
+            </div>
         <ul>
             <li><a href="paginas/campagne.html">Campagne</a></li>
             <li><a href="paginas/nieuws/index.html"></a>Nieuws</li>
@@ -40,13 +42,30 @@
 </div>
 </section>
     <section class="hero">
-        <div class=homeHero></div>
-        <h2>Hero Message</h2>
-        <a><p>Call to Action</p></a>
-        <div><ul id="heroPagination" class="heroPagination">
-            <li></li>
-            <li></li>
-        </ul></div>
+        <div class=homeHero>
+        <img id="homeHeroCuisineLogo" src="images/cuisinelogo.png" alt="cuisine logo">
+        <img id="homeHeroBackImage" src="images/placeholder.png" alt="hero image">
+        <div class=homeHeroMid>
+            <input id="homePaginationLeft" type="image" src="images/previous.png">
+        <div class="homeHeroText">
+            <p class="heroPaginationIntro">jada jada</p>
+            <hr>
+            <p class="heroPaginationHead">BOEM</p>
+        </div>
+        <input id="homePaginationRight" type="image" src="images/previous.png">
+    </div>
+        <div class="heroPaginationCTA">
+            <button class="heroPaginaButton">dfv</button>
+            <ul>
+                <li><input type="radio" name="homePagination" id="homePagination1"></li>
+                <li><input type="radio" name="homePagination"id="homePagination2"></li>
+                <li><input type="radio" name="homePagination"id="homePagination3"></li>
+            </ul>
+        </div>
+        
+    </div>
+
+        
     </section>
     <!-- Boeken placeholder for style check -->
     <section class= "homeBoeken">
@@ -127,4 +146,5 @@ src="https://code.jquery.com/jquery-3.6.1.min.js"
 integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
 crossorigin="anonymous"></script>
 <script src="js/mainpage.js"></script>
+<script src="js/heroPagination.js"></script>
 </html>

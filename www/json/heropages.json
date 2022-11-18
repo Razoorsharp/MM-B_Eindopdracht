@@ -1,0 +1,25 @@
+[
+    { 
+    "id" : "1", 		
+    "intro" : "leer de nieuwste recepten<br>en verwen jezelf en je gasten!", 							
+    "head" : "Voor elke smaak<br>is er iets te vinden", 						
+    "buttonText" : "Nieuwe Recepten", 		
+    "img" : "images/heroimages/1.jpg"    
+},
+
+{ 
+    "id" : "2", 		
+    "intro" : "hier zijn boeken<br> veel plezier er mee!", 							
+    "head" : "Alle boeken<br>Smaken naar meer!", 						
+    "buttonText" : "Nieuwe boeken", 		
+    "img" : "images/heroimages/2.jpg"    
+},
+{ 
+    "id" : "3", 		
+    "intro" : "leer alles <br>over de Koe!", 							
+    "head" : "ieder stukje van de koe<br>in kaart gebracht", 						
+    "buttonText" : "Over de koe!", 		
+    "img" : "images/heroimages/1.jpg"    
+}
+]
+

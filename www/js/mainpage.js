@@ -93,7 +93,9 @@ $.getJSON("./json/recepten.json", function(data){
     footerMarkup += '<p class="footerCopyright">Cuisine B.V. copyright 2018</p>';
     footerMarkup += '</div></div>';
 
+//    !!!!END OF CREATORS !!!
 
+   
     $("footer").append(footerMarkup);
         // receptIconPLacement function. i = Sooftgerecht in de recepten constructor. en plaatst het benodigde icoon per recept card er in. 
  function receptIconPlacement(nrGerei,nrGerecht,nrTijd){ 

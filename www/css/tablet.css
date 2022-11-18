@@ -1,4 +1,8 @@
 @media only screen and (min-width: 768px){
+    /* Navigation CSS */
+
+
+
 .boekenCard{
     max-width: 750px;
 }
@@ -11,7 +15,9 @@
    
 
 }
-
+.boekenCardHolder{
+    width: 90%;
+}
 
 .receptCardHolder{
     display: grid;
