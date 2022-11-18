@@ -23,8 +23,27 @@ leftRightField.addEventListener('click', function(e){
 console.log(e.target.id)
     if( e.target.id == "homePaginationLeft"){
         console.log("links")
+        // check if indicator is at minimum
+        if(indicator == 1){     
+            console.log("gaat niet");
+            return false;
+        }else{
+            console.log("gaat wel")
+            indicator--;
+            console.log(indicator);
+        }
+        // check if indicator is correct and at maximum
     }else if(e.target.id == "homePaginationRight"){
         console.log("rechts");
+        if(indicator ==3){
+            console.log(indicator);
+            console.log("gaat niet rechts")
+            return false;
+        }else if(indicator =>1){
+            console.log("rechts gaat")
+            indicator++;
+            console.log(indicator);
+        }
     }
 });
 }); // end of script. 
