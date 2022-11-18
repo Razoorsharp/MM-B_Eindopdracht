@@ -59,10 +59,10 @@ console.log(e.target.id)
             $.each(data, function(key, value){
                 if(i == value.id){
                     console.log("yes id matched up "+ i);
+                }else{
+                    
                 }
-                else{
-                    return false;
-                }
+                
             });
         });
 
