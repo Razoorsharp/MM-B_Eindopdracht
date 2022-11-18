@@ -31,6 +31,7 @@ console.log(e.target.id)
             console.log("gaat wel")
             indicator--;
             console.log(indicator);
+            switchImg(indicator);
         }
         // check if indicator is correct and at maximum
     }else if(e.target.id == "homePaginationRight"){
@@ -43,7 +44,27 @@ console.log(e.target.id)
             console.log("rechts gaat")
             indicator++;
             console.log(indicator);
+            switchImg(indicator);
+
         }
     }
 });
+
+            // ----------------------------------
+            //         Functions
+            // -----------------------------------
+
+    function switchImg(i){
+        $.getJSON("./json/heropages.json", function(data){
+            $.each(data, function(key, value){
+                if(i == value.id){
+                    console.log("yes id matched up "+ i);
+                }
+                else{
+                    return false;
+                }
+            });
+        });
+
+    }
 }); // end of script. 
