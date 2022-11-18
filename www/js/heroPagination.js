@@ -3,7 +3,7 @@ var d = document;
 if(!d.getElementById("homeHeroBackImage"))return false;
     
 var image = d.getElementById("homeHeroBackImage");
-var leftRightField = d.getElementsByClassName("homeHeroMid") // eventlistener needed to check oif the left or right button was clicked. 
+var leftRightField = d.getElementById("homeHeroMid") // eventlistener needed to check oif the left or right button was clicked. 
 var buttonLeft = d.getElementById("homePaginationLeft"); // button for leftscroll
 var buttonRight = d.getElementById("homePaginationRight"); //button for right scroll
 var heroText = d.getElementsByClassName("heroPaginationIntro"); // general text 
@@ -20,6 +20,11 @@ var indicator = 1; // indicator needed for image id  and pagination radiobutton 
 // ---------------------------------------------------
 
 leftRightField.addEventListener('click', function(e){
-console.log('waarom?')
+console.log(e.target.id)
+    if( e.target.id == "homePaginationLeft"){
+        console.log("links")
+    }else if(e.target.id == "homePaginationRight"){
+        console.log("rechts");
+    }
 });
 }); // end of script. 
