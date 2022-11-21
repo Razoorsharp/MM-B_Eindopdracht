@@ -1,3 +1,11 @@
+.receptenFilter{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
 .receptCardHolder{
     display: grid;
     grid-template-areas: "rCardOne rCardTwo rCardThree";

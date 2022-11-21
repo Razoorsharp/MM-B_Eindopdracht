@@ -1,4 +1,10 @@
 console.log("running");
+// if(!d.getElementById("ingredientenHolder"))return false;
+var d = document;
+var ingredientenFilter = d.getElementById('ingredientenHolder');
+var gereiFilter = d.getElementById('gereiHolder');
+
+
 
 var pageResForIcons = '';
 if (!window.matchMedia('(min-width: 768px)').matches) {
@@ -8,9 +14,28 @@ if (!window.matchMedia('(min-width: 768px)').matches) {
 }
 $.getJSON("../../json/recepten.json", function(data){
     var receptenMarkup = '';
-    
+    var filterIngredienten= '';  // lijst met HTML die gebouwd wordt op basis van Json Soort
+    var filterGerei = ''; // lijst met HTML die gebouwd wordt op basis van Json gerei
+    // loop for creating the filter options
+    var soortGerecht =[]; // array om alle soorten gerechten te verzamelen
+    // zet soort gerechten in een array genaamd soortGerecht
+        // loop door alle gerecht soorten heen, en zet deze in soort gerecht array
+        $.each(data, function(key, value){
+            soortGevonden = value.soort;
+            if(soortGerecht.indexOf(soortGevonden) == -1){ // als gercht soort al bestaat, dat hem dan niet nog eens in de lijst
+                soortGerecht.push(soortGevonden);
+            }
+        });
+    console.log(soortGerecht); // laat alle gerechten in de array zien . 
+
+        // for loop om alle soorten gerechten in de HTML te zetten variabel staat boven gedevineerd 
+    for(soort of soortGerecht){
+		filterIngredienten += '<li><input type="radio" name="ingredientFilterOptie" value="'+ soort +'">'+ soort +'</li>';
+	}
+	$(ingredientenFilter).append(filterIngredienten);
+    // loop for creating the cards
     $.each(data, function(key, value){
-        console.log(value);
+        
         receptenMarkup += '<div class="receptCard"><div class="cardSpacer"><div class="receptHead">';        
         receptenMarkup += '<h2>'+ value.title +'</h2>';
         // defineer variabelen voor de juiste iconen gebaseerd op de Json
@@ -23,7 +48,7 @@ $.getJSON("../../json/recepten.json", function(data){
         receptenMarkup += '<div class="receptText">';
         receptenMarkup += '<ul>';
             $.each(value.ingredienten, function(id, ingredient){
-                console.log(ingredient)
+                
                 receptenMarkup += '<li>'+ ingredient+ '</li>';
             });
         receptenMarkup += '</ul>';	
