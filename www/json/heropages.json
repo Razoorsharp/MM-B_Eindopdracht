@@ -4,7 +4,8 @@
     "intro" : "leer de nieuwste recepten<br>en verwen jezelf en je gasten!", 							
     "head" : "Voor elke smaak<br>is er iets te vinden", 						
     "buttonText" : "Nieuwe Recepten", 		
-    "img" : "images/heroimages/1.jpg"    
+    "img" : "images/heroimages/1.jpg",
+    "url" : "paginas/recepten/index.html"    
 },
 
 { 
@@ -12,14 +13,16 @@
     "intro" : "hier zijn boeken<br> veel plezier er mee!", 							
     "head" : "Alle boeken<br>Smaken naar meer!", 						
     "buttonText" : "Nieuwe boeken", 		
-    "img" : "images/heroimages/2.jpg"    
+    "img" : "images/heroimages/2.jpg",
+    "url" : "paginas/boeken/index.html"     
 },
 { 
     "id" : "3", 		
     "intro" : "leer alles <br>over de Koe!", 							
     "head" : "ieder stukje van de koe<br>in kaart gebracht", 						
     "buttonText" : "Over de koe!", 		
-    "img" : "images/heroimages/1.jpg"    
+    "img" : "images/heroimages/1.jpg",
+    "url" : "paginas/overdekoe/index.html"     
 }
 ]
 

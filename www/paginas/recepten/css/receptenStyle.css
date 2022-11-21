@@ -1,0 +1,41 @@
+.receptCardHolder{
+    display: grid;
+    grid-template-areas: "rCardOne rCardTwo rCardThree";
+    gap: 0rem;   
+    
+}
+
+.receptCardHolder:nth-child(1) .receptCard{
+grid-area: "rCardTwo";
+gap: 1rem;    
+}
+.receptCardHolder:nth-child(2) .receptCard{
+grid-area: "rCardTwo";
+gap: 1rem;    
+}
+.receptCardHolder:nth-child(3) .receptCard{
+    grid-area: "rCardThree";
+    gap: 1rem;    
+    }
+    /*  Artikel card positions */
+.artikelCardHolder{
+    display: grid;
+    grid-template-areas: "aCardOne aCardTwo";
+}
+
+.receptText img {
+    max-width: 263px;
+    height: 376px;
+}
+
+            /* TABLET BREAK */
+@media only screen and (min-width: 768px){
+
+
+}
+        /* DESKTOP BREAK */
+@media only screen and (min-width: 1024px){
+
+
+}
+

@@ -132,6 +132,7 @@ border: none;
     width: 25%;
     transform: translate(-50%, 0%);
     z-index: 10;
+    max-width: 200px;
 }
 #heroImageCarrousel{
     width: 50%;
@@ -165,7 +166,7 @@ border: none;
 } 
 .homeHeroMid{
     position: absolute;
-    width: 150%;
+    width: 100%;
     top:55%;
     left:50%;
     transform: translate(-50%, -50%);
@@ -178,13 +179,32 @@ border: none;
     transform: translate(-50%, -50%);
     width: 2%;
 }
-#homePaginationRight{
-    rotate:180deg;
-}
+
 .homeHeroText{
 text-align: center;
 color: #fff;
+width: 75%;
 }
+.homeHeroText hr{
+    font-size: 0px;
+    color: #418c9f;
+    background-color: #418c9f;
+    border:3px solid #418c9f;
+    margin: 1rem auto; 
+    width: 40%;  
+
+}
+.homeHeroText p{
+    /* font-family: "Raleway bold"; */
+    font-size: 1.5rem;
+
+}
+.homeHeroText h2{
+    font-family: "Raleway bold";
+    font-size: 2rem;
+
+}
+
 
 .heroPaginationCTA{
     position: absolute;
@@ -201,7 +221,11 @@ color: #fff;
    font-family: "Raleway bold";
    font-weight: bold;
    background-color: #d98a3f;
+   box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.2);
     
+}
+.heroPaginationCTA button:hover{
+    box-shadow: 0px 6px 8px 0px rgba(0,0,0,0.3);
 }
 .heroPaginationCTA ul{
     display: flex;

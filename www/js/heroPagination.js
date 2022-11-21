@@ -7,7 +7,7 @@ var buttonLeft = d.getElementById("homePaginationLeft"); // button for leftscrol
 var buttonRight = d.getElementById("homePaginationRight"); //button for right scroll
 var heroText = d.getElementsByClassName("heroPaginationIntro"); // general text 
 var heroHead = d.getElementsByClassName("heroPaginationHead");// header within text
-var heroButton = d.getElementsByClassName("heroPaginaButton");// text within the button for the link. 
+var heroButton = d.getElementById("heroPaginaButton");// text within the button for the link. 
 var page1 = d.getElementById("homePagination1"); // pagination input radio button
 var page2 = d.getElementById("homePagination2"); // pagination input radio button
 var page3 = d.getElementById("homePagination3"); // pagination input radio button
@@ -16,6 +16,9 @@ var image2 = d.getElementById("homeHeroBackImage2");
 var image3 = d.getElementById("homeHeroBackImage3");
 
 var indicator = 1; // indicator needed for image id  and pagination radiobutton to check. 
+switchImg(indicator); // initial run for hero
+$("#homePagination"+ indicator).prop("checked", true); // initial checkbox checked.  
+
 
 // __________________________________________________-
 //         Events
@@ -69,6 +72,9 @@ leftRightField.addEventListener('click', function(e){
                     $(heroText).html(value.intro);
                     $(heroHead).html(value.head);
                     $(heroButton).html(value.buttonText);
+                    heroButton.addEventListener("click", function(e){
+                        window.open(value.url);
+                    });
                 } 
                 if(page1.checked){
                     // fun animation for first image
