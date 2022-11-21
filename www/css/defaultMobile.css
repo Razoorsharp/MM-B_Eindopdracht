@@ -133,11 +133,36 @@ border: none;
     transform: translate(-50%, 0%);
     z-index: 10;
 }
-#homeHeroBackImage1{
-    width: 100%;
+#heroImageCarrousel{
+    width: 50%;
+    height: 100%;
+    left:-20vw;
+    display: flex;
+    overflow: hidden;
+}
+#heroImageCarrousel img{
+    position: absolute;
+    width:100vw;
+    height: 100%;
+} 
+#heroImageCarrousel img:nth-child(1){
+    position: absolute;
+    width:100vw;
     height: 100%;
     left:0vw;
-}
+} 
+#heroImageCarrousel img:nth-child(2){
+    position: absolute;
+    width:100vw;
+    height: 100%;
+    left:100vw;
+} 
+#heroImageCarrousel img:nth-child(3){
+    position: absolute;
+    width:100vw;
+    height: 100%;
+    left:200vw;
+} 
 .homeHeroMid{
     position: absolute;
     width: 150%;
@@ -209,10 +234,7 @@ color: #fff;
 button{
     width: 100%;
 }
-img{
-    max-width: 100%;
-    max-height: 100%;
-}
+
 button{
     border: none;
     font-size: 2rem;
