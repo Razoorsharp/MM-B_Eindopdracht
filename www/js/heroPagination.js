@@ -24,38 +24,27 @@ var indicator = 1; // indicator needed for image id  and pagination radiobutton 
 // leftRightField event checks which button is pressed and sets indicator accordingly for the hero element to show. 
 // function switchimage is also run to set the radio buttons which in turn run an animation
 leftRightField.addEventListener('click', function(e){
-console.log(e.target.id)
     if( e.target.id == "homePaginationLeft"){
-        console.log("links")
         // check if indicator is at minimum
         if(indicator == 1){     
-            console.log("gaat niet");
             return false;
         }else{
-            console.log("gaat wel")
+            
             indicator--;
-            console.log(indicator);
             switchImg(indicator);
         }
         // check if indicator is correct and at maximum
     }else if(e.target.id == "homePaginationRight"){
-        console.log("rechts");
         if(indicator ==3){
-            console.log(indicator);
-            console.log("gaat niet rechts")
+            
             return false;
-        }else if(indicator =>1){
-            console.log("rechts gaat")
-            indicator++;
-            console.log(indicator);
+        }else if(indicator =>1){            
+            indicator++;           
             switchImg(indicator);
-
         }
     }
 });
-
     // Radio button triggering the animations, switchimg function
-
     page1.addEventListener('click', function(e){
         indicator = 1;
         switchImg(indicator)
@@ -68,7 +57,6 @@ console.log(e.target.id)
         indicator = 3;
         switchImg(indicator)
     });
-
             // ----------------------------------
             //         Functions
             // -----------------------------------
@@ -85,14 +73,12 @@ console.log(e.target.id)
                 if(page1.checked){
                     // fun animation for first image
                     CarrouselTo1();
-                    
                 }else if(page2.checked){
                     // run animation for page 2
                     CarrouselTo2();
                 }else if(page3.checked){
                     //run animation for image 3
                     CarrouselTo3();
-
                 }
 
 
@@ -101,9 +87,7 @@ console.log(e.target.id)
     }
 
     function CarrouselTo1(){
-        console.log("running animation 1");
         width = screen.width;
-        console.log("window width = "+ width)
         gsap.to(image1, {
             css:{left:"0vw"}
         })
@@ -117,9 +101,7 @@ console.log(e.target.id)
         
     };
     function CarrouselTo2(){
-        console.log("running animation 2");
         width = screen.width;
-        console.log("window width = "+ width)
         gsap.to(image1, {
             css:{left:"-100vw"}
         })
@@ -131,9 +113,7 @@ console.log(e.target.id)
         })
     };
     function CarrouselTo3(){
-        console.log("running animation 3");
         width = screen.width;
-        console.log("window width = "+ width)
         gsap.to(image1, {
             css:{left:"-200vw"}
         })
