@@ -26,13 +26,25 @@ $.getJSON("../../json/recepten.json", function(data){
                 soortGerecht.push(soortGevonden);
             }
         });
+        // loop door alle soorten gerei heen
+        var soortGerei =[];
+        $.each(data, function(key, value){
+            soortGevonden = value.benodigdheden;
+            if(soortGerei.indexOf(soortGevonden) == -1){ // als gercht soort al bestaat, dat hem dan niet nog eens in de lijst
+                soortGerei.push(soortGevonden);
+            }
+        });
     console.log(soortGerecht); // laat alle gerechten in de array zien . 
 
         // for loop om alle soorten gerechten in de HTML te zetten variabel staat boven gedevineerd 
     for(soort of soortGerecht){
 		filterIngredienten += '<li><input type="radio" name="ingredientFilterOptie" value="'+ soort +'">'+ soort +'</li>';
 	}
+    for(soort of soortGerei){
+		filterGerei += '<li><input type="radio" name="gereiFilter" value="'+ soort +'"><img src="../../images/icons/'+ pageResForIcons +'/'+ soort +'.png" alt=""></li>';
+	}
 	$(ingredientenFilter).append(filterIngredienten);
+    $(gereiFilter).append(filterGerei);
     // loop for creating the cards
     $.each(data, function(key, value){
         
@@ -57,7 +69,7 @@ $.getJSON("../../json/recepten.json", function(data){
         receptenMarkup += '</div></div></div></div>';    
     });
     $('.receptCardHolder').append(receptenMarkup);
-});
+ }); // END JSON REQUESTS
 
        // receptIconPLacement function. i = Sooftgerecht in de recepten constructor. en plaatst het benodigde icoon per recept card er in. 
        function receptIconPlacement(nrGerei,nrGerecht,nrTijd){ 
