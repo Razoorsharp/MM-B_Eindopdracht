@@ -39,10 +39,10 @@ $.getJSON("../../json/recepten.json", function(data){
 
         // for loop om alle soorten gerechten in de HTML te zetten variabel staat boven gedevineerd 
     for(soort of soortGerecht){
-		filterIngredienten += '<li><input type="checkbox" name="ingredientFilter" value="'+ soort +'">'+ soort +'</li>';
+		filterIngredienten += '<li><input type="radio" name="ingredientFilter" value="'+ soort +'">'+ soort +'</li>';
 	}
     for(soort of soortGerei){
-		filterGerei += '<li><input type="checkbox" name="gereiFilter" value="'+ soort +'"><img src="../../images/icons/'+ pageResForIcons +'/'+ soort +'.png" alt=""></li>';
+		filterGerei += '<li><input type="radio" name="gereiFilter" value="'+ soort +'"><img src="../../images/icons/'+ pageResForIcons +'/'+ soort +'.png" alt=""></li>';
 	}
 	$(ingredientenFilter).append(filterIngredienten);
     $(gereiFilter).append(filterGerei);
@@ -78,39 +78,53 @@ $.getJSON("../../json/recepten.json", function(data){
 		//??this?? de checkbox  // check nog eens wat $(this) en alleen This weergeeft. rijke html jquery ?
         console.log("selected");
 		var deCheckbox = $(this)
+        console.log("de checkbox " + deCheckbox);
 		var waarde = deCheckbox.val();
+        console.log("waarde " + waarde);
 		var selected = deCheckbox.is(':checked'); // true/false
+        console.log("selected" + selected);
+        
 
 		var aantalSoort = $('[name=ingredientFilter]:checked').length; // aantal producten nummer variabel
+        console.log(aantalSoort)
 		var aantalGerei = $('[name=gereiFilter]:checked').length; // 0 tm 5
 
 		// console.log(waarde, selected);
-
-		$('.receptCardHolder .receptCard').each(function(){
+       
+		$('.receptCard').each(function(){
+            
 			var card = $(this);
+            
+            // console.log(card.attr('data-soort'));
 
 			if(card.attr('data-gerei') == waarde){
 				// Ja de Checkbox hoort bij deze card
+             
 				card.attr('data-gerei-flag', selected);
+                // console.log(" zet gerei flag " + card.attr('data-gerei-flag'));
+                
 			}
+            console.log(card.attr('data-gerei-flag'));
 
 			if(card.attr('data-soort') == waarde){
 				// Ja de Checkbox hoort bij deze card
 				card.attr('data-soort-flag', selected);
 			}
 
-			var b_show = true;
-			var r_show = true;
+			var s_show = true;
+			var g_show = true;
 
 			if (card.attr('data-soort-flag') == 'false' && aantalSoort != 0){
-				b_show = false;
+               
+				s_show = false;
+                console.log(s_show);
 			}
 
 			if (card.attr('data-gerei-flag') == 'false' && aantalGerei != 0){
-				r_show = false;
+				g_show = false;
 			}
 
-			if (b_show && r_show){
+			if (s_show && g_show){
 				card.show();
 			}else{
 				card.hide();

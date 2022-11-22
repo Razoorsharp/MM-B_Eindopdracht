@@ -1,39 +1,102 @@
+@import url(../../../css/cssReset.css);
+@import url(../../../css/styles.css);
 .receptenFilter{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    
+    margin: 0 auto;;
 }
+/* Recepten card */
 
 .receptCardHolder{
-    display: grid;
-    grid-template-areas: "rCardOne rCardTwo rCardThree";
-    gap: 0rem;   
-    
+    width:100%;
+    margin: 0 auto;
 }
+ .receptCard{
+    display: flex;
+    align-content: center;
+    justify-items: center;
+    position: relative;
+   margin: 0 auto;
+    border: 1px black solid;
+    max-width: 350px;
 
-.receptCardHolder:nth-child(1) .receptCard{
-grid-area: "rCardTwo";
-gap: 1rem;    
-}
-.receptCardHolder:nth-child(2) .receptCard{
-grid-area: "rCardTwo";
-gap: 1rem;    
-}
-.receptCardHolder:nth-child(3) .receptCard{
-    grid-area: "rCardThree";
-    gap: 1rem;    
-    }
-    /*  Artikel card positions */
-.artikelCardHolder{
-    display: grid;
-    grid-template-areas: "aCardOne aCardTwo";
-}
-
-.receptText img {
-    max-width: 263px;
-    height: 376px;
+ }
+ .receptCard:hover{
+    box-shadow: 5px -5px #88888850
+ }
+ .cardSpacer{
+     width:95%;
+     height:100%;     
+     margin: 4% auto; 
+     display: flex;
+    align-content: center;
+    justify-items: center;
+    flex-direction: column;
+ }
+ .receptHead{  
+     display:flex;   
+     width: 100%;
+     justify-content: space-between;
+ }
+ .receptHead ul{
+     display: flex;
+     justify-content: flex-end;
+     align-items: flex-end;
+ }
+ .receptHead li{
+     font-size:0.5rem;
+ }
+ .receptTime{
+     position: relative;
+ }
+ .receptTime30:after{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    transform: translate(10%, 20%);
+    content: "30 min";
+ }
+ .receptTime60:after{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    transform: translate(10%, 20%);
+    content: "60 min";
+ }
+ .receptTime120:after{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    transform: translate(10%, 20%);
+    content: "120 min";
+ }
+ 
+ .receptText ul{
+    margin: .5rem 0;
+ }
+ .receptText li{
+    display: list-item;
+    list-style-type: disc;
+    list-style-position: inside;   
+ }
+ .receptText button{
+     margin-top: 1rem;
+ }
+ .receptText img{
+     width: 100%;
+     
+   
 }
 
             /* TABLET BREAK */
