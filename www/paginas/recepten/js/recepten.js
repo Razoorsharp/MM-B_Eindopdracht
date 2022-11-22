@@ -1,3 +1,4 @@
+$(document).ready(function(){
 console.log("running");
 // if(!d.getElementById("ingredientenHolder"))return false;
 var d = document;
@@ -34,21 +35,21 @@ $.getJSON("../../json/recepten.json", function(data){
                 soortGerei.push(soortGevonden);
             }
         });
-    console.log(soortGerecht); // laat alle gerechten in de array zien . 
+  
 
         // for loop om alle soorten gerechten in de HTML te zetten variabel staat boven gedevineerd 
     for(soort of soortGerecht){
-		filterIngredienten += '<li><input type="radio" name="ingredientFilterOptie" value="'+ soort +'">'+ soort +'</li>';
+		filterIngredienten += '<li><input type="checkbox" name="ingredientFilter" value="'+ soort +'">'+ soort +'</li>';
 	}
     for(soort of soortGerei){
-		filterGerei += '<li><input type="radio" name="gereiFilter" value="'+ soort +'"><img src="../../images/icons/'+ pageResForIcons +'/'+ soort +'.png" alt=""></li>';
+		filterGerei += '<li><input type="checkbox" name="gereiFilter" value="'+ soort +'"><img src="../../images/icons/'+ pageResForIcons +'/'+ soort +'.png" alt=""></li>';
 	}
 	$(ingredientenFilter).append(filterIngredienten);
     $(gereiFilter).append(filterGerei);
     // loop for creating the cards
     $.each(data, function(key, value){
         
-        receptenMarkup += '<div class="receptCard"><div class="cardSpacer"><div class="receptHead">';        
+        receptenMarkup += '<div class="receptCard" data-soort="'+ value.soort +'" data-gerei="'+ value.benodigdheden +'"><div class="cardSpacer"><div class="receptHead">';        
         receptenMarkup += '<h2>'+ value.title +'</h2>';
         // defineer variabelen voor de juiste iconen gebaseerd op de Json
         let soortGerei = value.benodigdheden;
@@ -82,5 +83,53 @@ $.getJSON("../../json/recepten.json", function(data){
            iconTijd = '<li class="recentTime receptTime'+ nrTijd +'"><img src="../../images/icons/'+ pageResForIcons +'/163.png"></li></ul>'
    
         return iconGerei+iconGerecht+iconTijd;
-   
+        
     }
+    console.log('voor search functie')
+    $('.receptenFilter input:checkbox').on('change', function(e){ // zoek functie zelf
+		//??this?? de checkbox  // check nog eens wat $(this) en alleen This weergeeft. rijke html jquery ?
+        console.log("selected");
+		var deCheckbox = $(this)
+		var waarde = deCheckbox.val();
+		var selected = deCheckbox.is(':checked'); // true/false
+
+		var aantalSoort = $('[name=ingredientFilter]:checked').length; // aantal producten nummer variabel
+		var aantalGerei = $('[name=gereiFilter]:checked').length; // 0 tm 5
+
+		// console.log(waarde, selected);
+
+		$('.receptCardHolder .receptCard').each(function(){
+			var card = $(this);
+
+			if(card.attr('data-gerei') == waarde){
+				// Ja de Checkbox hoort bij deze card
+				card.attr('data-gerei-flag', selected);
+			}
+
+			if(card.attr('data-soort') == waarde){
+				// Ja de Checkbox hoort bij deze card
+				card.attr('data-soort-flag', selected);
+			}
+
+			var b_show = true;
+			var r_show = true;
+
+			if (card.attr('data-soort-flag') == 'false' && aantalSoort != 0){
+				b_show = false;
+			}
+
+			if (card.attr('data-gerei-flag') == 'false' && aantalGerei != 0){
+				r_show = false;
+			}
+
+			if (b_show && r_show){
+				card.show();
+			}else{
+				card.hide();
+			}
+
+		});
+
+
+	}); // eindechange event
+}); // einde van document.load
