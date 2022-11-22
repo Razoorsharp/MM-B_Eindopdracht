@@ -70,23 +70,11 @@ $.getJSON("../../json/recepten.json", function(data){
         receptenMarkup += '</div></div></div></div>';    
     });
     $('.receptCardHolder').append(receptenMarkup);
- }); // END JSON REQUESTS
-
-       // receptIconPLacement function. i = Sooftgerecht in de recepten constructor. en plaatst het benodigde icoon per recept card er in. 
-       function receptIconPlacement(nrGerei,nrGerecht,nrTijd){ 
-  
-        // icon gerei defineren. 
-           iconGerei = '<ul><li class="receptGerei"><img src="../../images/icons/'+ pageResForIcons +'/'+ nrGerei +'.png"></li>';
-       // icon hoofd ingredient defineren
-           iconGerecht = '</li><li class="receptHoofdIngr"><img src="../../images/icons/'+ pageResForIcons +'/'+ nrGerecht +'.png"></li>';
-       // icon en tekst tijd 
-           iconTijd = '<li class="recentTime receptTime'+ nrTijd +'"><img src="../../images/icons/'+ pageResForIcons +'/163.png"></li></ul>'
    
-        return iconGerei+iconGerecht+iconTijd;
-        
-    }
-    console.log('voor search functie')
-    $('.receptenFilter input:checkbox').on('change', function(e){ // zoek functie zelf
+            //----------------
+            // SEARCH FUNCTION
+            //-----------------
+    $('.receptenFilter input').on('change', function(e){ // zoek functie zelf
 		//??this?? de checkbox  // check nog eens wat $(this) en alleen This weergeeft. rijke html jquery ?
         console.log("selected");
 		var deCheckbox = $(this)
@@ -128,8 +116,27 @@ $.getJSON("../../json/recepten.json", function(data){
 				card.hide();
 			}
 
-		});
+		}); // End of search function
 
 
 	}); // eindechange event
+ }); // END JSON REQUESTS
+
+       // receptIconPLacement function. i = Sooftgerecht in de recepten constructor. en plaatst het benodigde icoon per recept card er in. 
+       function receptIconPlacement(nrGerei,nrGerecht,nrTijd){ 
+  
+        // icon gerei defineren. 
+           iconGerei = '<ul><li class="receptGerei"><img src="../../images/icons/'+ pageResForIcons +'/'+ nrGerei +'.png"></li>';
+       // icon hoofd ingredient defineren
+           iconGerecht = '</li><li class="receptHoofdIngr"><img src="../../images/icons/'+ pageResForIcons +'/'+ nrGerecht +'.png"></li>';
+       // icon en tekst tijd 
+           iconTijd = '<li class="recentTime receptTime'+ nrTijd +'"><img src="../../images/icons/'+ pageResForIcons +'/163.png"></li></ul>'
+   
+        return iconGerei+iconGerecht+iconTijd;
+        
+    }
+    
+    
+    
+ 
 }); // einde van document.load
