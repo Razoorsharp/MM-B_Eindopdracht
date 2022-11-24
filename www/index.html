@@ -22,24 +22,21 @@
     <!-- <div class="no-JS">
         <p> Please enable Javascript in your browser<br>Without it, this site will not function properly<br> Thank you for your understanding </p>
     </div> -->
-    <section name="navigation">
-        <div class="navigation">
-        <nav>
-            <label for="showMenu" id="showMenuLabel"></label>
-			<input type="checkbox" id="showMenu" role="button">
-            <div class=navButtons>
-            <button class="loginButton"></button>
-            <button class="cartButton"></button>
-            </div>
-        <ul>
-            <li><a href="paginas/campagne.html">Campagne</a></li>
-            <li><a href="paginas/nieuws/index.html"></a>Nieuws</li>
-            <li><a href="paginas/recepten/index.html"></a></li>
-            <li><a href="paginas/over_ons/index.html"></a></li>
-            <li><a href="paginas/contact/index.html"></a></li>
-        </ul>
-    </nav>
-</div>
+    <div class="mobile-container">
+
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+          <a href="#home" class="active">Logo</a>
+          <div id="myLinks">
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+    </div>
 </section>
     <section class="hero">
         <div class=homeHero>
@@ -155,5 +152,15 @@ crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
 <script src="js/mainpage.js"></script>
 <script src="js/heroPagination.js"></script>
+<script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
 
 </html>
