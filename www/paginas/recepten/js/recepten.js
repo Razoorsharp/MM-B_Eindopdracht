@@ -42,7 +42,7 @@ $.getJSON("../../json/recepten.json", function(data){
 		filterIngredienten += '<li><input type="radio" name="ingredientFilter" value="'+ soort +'">'+ soort +'</li>';
 	}
     for(soort of soortGerei){
-		filterGerei += '<li><input type="radio" name="gereiFilter" value="'+ soort +'"><img src="../../images/icons/'+ pageResForIcons +'/'+ soort +'.png" alt=""></li>';
+		filterGerei += '<li><input type="radio" name="gereiFilter" value="'+ soort +'"><img src="../../images/icons/32px/'+ soort +'.png" alt=""></li>';
 	}
 	$(ingredientenFilter).append(filterIngredienten);
     $(gereiFilter).append(filterGerei);
@@ -86,7 +86,7 @@ $.getJSON("../../json/recepten.json", function(data){
         
 
 		var aantalSoort = $('[name=ingredientFilter]:checked').length; // aantal producten nummer variabel
-        console.log(aantalSoort)
+        console.log("aantal soort " + aantalSoort)
 		var aantalGerei = $('[name=gereiFilter]:checked').length; // 0 tm 5
 
 		// console.log(waarde, selected);
@@ -101,28 +101,36 @@ $.getJSON("../../json/recepten.json", function(data){
 				// Ja de Checkbox hoort bij deze card
              
 				card.attr('data-gerei-flag', selected);
-                // console.log(" zet gerei flag " + card.attr('data-gerei-flag'));
-                
+                // console.log(" zet gerei flag " + card.attr('data-gerei-flag'));                
 			}
-            console.log(card.attr('data-gerei-flag'));
+            
 
 			if(card.attr('data-soort') == waarde){
 				// Ja de Checkbox hoort bij deze card
-				card.attr('data-soort-flag', selected);
-			}
+				card.attr('data-soort-flag', 'true');
+                // console.log("data soort flag = " + card.attr('data-soort-flag'));
+			}else{
+                card.attr('data-soort-flag', 'false');
+            }
 
 			var s_show = true;
 			var g_show = true;
+            // console.log(g_show);
 
 			if (card.attr('data-soort-flag') == 'false' && aantalSoort != 0){
                
 				s_show = false;
-                console.log(s_show);
+                console.log("s show is? " + s_show);
 			}
 
 			if (card.attr('data-gerei-flag') == 'false' && aantalGerei != 0){
 				g_show = false;
+                console.log("s show is? " + s_show);
 			}
+
+            if(!card.attr('data-soort-flag') == 'true' && aantalSoort != 0){
+                console.log("kaart attr is false") ;
+            }
 
 			if (s_show && g_show){
 				card.show();
