@@ -39,10 +39,10 @@ $.getJSON("../../json/recepten.json", function(data){
 
         // for loop om alle soorten gerechten in de HTML te zetten variabel staat boven gedevineerd 
     for(soort of soortGerecht){
-		filterIngredienten += '<li><input type="radio" name="ingredientFilter" value="'+ soort +'">'+ soort +'</li>';
+		filterIngredienten += '<li><input type="checkbox" name="ingredientFilter" value="'+ soort +'">'+ soort +'</li>';
 	}
     for(soort of soortGerei){
-		filterGerei += '<li><input type="radio" name="gereiFilter" value="'+ soort +'"><img src="../../images/icons/32px/'+ soort +'.png" alt=""></li>';
+		filterGerei += '<li><input type="checkbox" name="gereiFilter" value="'+ soort +'"><img src="../../images/icons/32px/'+ soort +'.png" alt=""></li>';
 	}
 	$(ingredientenFilter).append(filterIngredienten);
     $(gereiFilter).append(filterGerei);
@@ -107,11 +107,9 @@ $.getJSON("../../json/recepten.json", function(data){
 
 			if(card.attr('data-soort') == waarde){
 				// Ja de Checkbox hoort bij deze card
-				card.attr('data-soort-flag', 'true');
+				card.attr('data-soort-flag', selected);
                 // console.log("data soort flag = " + card.attr('data-soort-flag'));
-			}else{
-                card.attr('data-soort-flag', 'false');
-            }
+			}
 
 			var s_show = true;
 			var g_show = true;
