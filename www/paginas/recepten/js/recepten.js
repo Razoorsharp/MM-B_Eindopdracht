@@ -55,6 +55,8 @@ $.getJSON("../../json/recepten.json", function(data){
         let soortGerei = value.benodigdheden;
         let soortGerecht = value.hoofdIngredient;
         let bereidTijd = value.tijd;
+        let image = "../../" + value.image;
+        console.log(image);
         // icons function, berei gerecht en time bepaald door nummers in de Json, zie handleiding. 
         receptenMarkup += receptIconPlacement(soortGerei,soortGerecht,bereidTijd); 
         receptenMarkup += '</div>';
@@ -65,10 +67,13 @@ $.getJSON("../../json/recepten.json", function(data){
                 receptenMarkup += '<li>'+ ingredient+ '</li>';
             });
         receptenMarkup += '</ul>';	
-        receptenMarkup += '<img src="../../'+ value.image +'" alt="'+ value.title +'">';
+        receptenMarkup += `<div class="receptImage" style="background-image: url('../../${value.image}');" alt="test"></div>`; 
+        // onderstaande error er in gehouden voor toekomstige referentie ( in engels maar toch). 
+       //  ERROR (fixed): (if used without the ${} method): background image does not work and the HTML jumbles the entire code around because of a / character, which doesnt happen in an image tag. The div's purpose is to display the image that is now available as background image. untill fixed keep the IMG tag. 
         receptenMarkup += ' <button>'+ value.title +'</button>';
         receptenMarkup += '</div></div></div></div>';    
     });
+    console.log(receptenMarkup);
     $('.receptCardHolder').append(receptenMarkup);
    
             //----------------
