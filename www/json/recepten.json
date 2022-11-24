@@ -35,5 +35,18 @@
         "benodigdheden": 135,
         "tijd": 120
 
+    },
+    { 
+        "id" : "4", 		
+        "title" : "courgette-lasagne", 
+        "ingredienten" :[" 250 g verse lasagnebladen "," 500 g ricotta ", " 250 g mozzarella ", " 2 st courgettes ", " 15 g Parmezaanse kaas "],  
+        "tekstComplete": " Verwarm de oven voor tot 200°C. Snijd de courgette in lange linten met behulp van een mandoline of dunschiller. Vet de ovenschaal in. Hak de Parmezaanse kaas grof. Maak een pesto alle ingrediënten in een keukenmachine te malen tot een glad mengsel. Breng eventueel verder op smaak met zout en peper. Verdeel een laag lasagnevellen over een ingevette ovenschaal en bestrijk met ricotta met de achterkant van een lepel. Leg er een laag courgettelinten op en bestrijk met een dunne laag pistachepesto. Herhaal tot de ingrediënten bijna op zijn, maar bewaar wat courgettelinten en ricotta. Eindig met stukjes gescheurde mozzarella en daarover een laag pasta. Bestrijk de laatste laag pasta met de rest van de ricotta en leg daar de laatste courgettelinten op. Rasp de Parmezaanse kaas boven de ovenschaal. Bak 20-30 minuten in het midden van de oven goudbruin.     ", 							
+        "image" : "images/recepten/courgette-lasagne.jpg", 
+        "buttonTekst" : "Lasagne Maken",
+        "hoofdIngredient": 131,
+        "soort": "Vegetarisch",
+        "benodigdheden": 135,
+        "tijd": 60
+
     }
 ]

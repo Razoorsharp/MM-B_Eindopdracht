@@ -70,7 +70,7 @@ $.getJSON("./json/recepten.json", function(data){
             });
         receptenMarkup += '</ul>';	
         receptenMarkup += `<div class="receptImage" style="background-image: url('${value.image}');" alt="test"></div>`; 
-        receptenMarkup += ' <button>'+ value.title +'</button>';
+        receptenMarkup += ' <button>'+ value.buttonTekst +'</button>';
         receptenMarkup += '</div></div></div></div>';    
     });
     $('.receptCardHolder').append(receptenMarkup);
