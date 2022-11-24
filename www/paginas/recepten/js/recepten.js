@@ -67,7 +67,7 @@ $.getJSON("../../json/recepten.json", function(data){
                 receptenMarkup += '<li>'+ ingredient+ '</li>';
             });
         receptenMarkup += '</ul>';	
-        receptenMarkup += `<div class="receptImage" style="background-image: url('../../${value.image}');" alt="test"></div>`; 
+        receptenMarkup += `<div class="receptImage" style="background-image: url('../../${value.image}');"></div>`; 
         // onderstaande error er in gehouden voor toekomstige referentie ( in engels maar toch). 
        //  ERROR (fixed): (if used without the ${} method): background image does not work and the HTML jumbles the entire code around because of a / character, which doesnt happen in an image tag. The div's purpose is to display the image that is now available as background image. untill fixed keep the IMG tag. 
         receptenMarkup += ' <button>'+ value.title +'</button>';
