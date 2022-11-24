@@ -69,7 +69,7 @@ $.getJSON("./json/recepten.json", function(data){
                 receptenMarkup += '<li>'+ ingredient+ '</li>';
             });
         receptenMarkup += '</ul>';	
-        receptenMarkup += '<img src="'+ value.image +'" alt="'+ value.title +'">';
+        receptenMarkup += `<div class="receptImage" style="background-image: url('${value.image}');" alt="test"></div>`; 
         receptenMarkup += ' <button>'+ value.title +'</button>';
         receptenMarkup += '</div></div></div></div>';    
     });
