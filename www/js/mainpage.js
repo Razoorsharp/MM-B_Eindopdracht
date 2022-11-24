@@ -50,9 +50,13 @@ $.getJSON("./json/artikellen.json", function(data){
 // recepten Card ceator @note: nog afmaken
 $.getJSON("./json/recepten.json", function(data){
     var receptenMarkup = '';
-    
+    var receptCount = 0;
     $.each(data, function(key, value){
-        console.log(value);
+        receptCount++;
+        console.log("recept count op = "+receptCount)
+        if(receptCount == 4)return; // op de hoofd pagina willen we maar 3 recepten zien. dus kappen we hem hier af
+        // sorteer functie moet nog gebouwd worden op basis van json datum van meest recente toegevoegd.  
+
         receptenMarkup += '<div class="receptCard"><div class="cardSpacer"><div class="receptHead">';        
         receptenMarkup += '<h2>'+ value.title +'</h2>';
         // defineer variabelen voor de juiste iconen gebaseerd op de Json
@@ -65,7 +69,7 @@ $.getJSON("./json/recepten.json", function(data){
         receptenMarkup += '<div class="receptText">';
         receptenMarkup += '<ul>';
             $.each(value.ingredienten, function(id, ingredient){
-                console.log(ingredient)
+               
                 receptenMarkup += '<li>'+ ingredient+ '</li>';
             });
         receptenMarkup += '</ul>';	
