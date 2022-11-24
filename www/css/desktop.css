@@ -46,10 +46,19 @@
     .receptCardHolder{
         display: grid;
         grid-template-areas: "rCardOne rCardTwo rCardThree";
-        gap: 0rem;   
+        gap: 1rem;   
         
     }
-    
+    .receptCard{
+        width:100%;
+        
+        max-width: 700px;
+    }
+    .receptImage{
+        width: 530px;
+        height: 500px;
+        margin:0 auto;  
+     }
     .receptCardHolder:nth-child(1) .receptCard{
     grid-area: "rCardTwo";
     gap: 1rem;    

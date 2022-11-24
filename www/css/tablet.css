@@ -24,17 +24,39 @@
  .receptImage{
     width: 350px;
     height: 500px;
-    margin:0 auto;    
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-origin: border-box;
+    margin:0 auto;  
  }
+ .receptTime30:after{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    transform: translate(40%, 20%);
+    content: "30 min";
+    font-size: 0.7rem;
+    text-align: right;
+ }
+ .receptTime60:after{   
+    transform: translate(40%, 20%);
+    content: "60 min";
+    font-size: 0.7rem;
+    text-align: right;
+ }
+ .receptTime120:after{
+    transform: translate(40%, 20%);
+    content: "120 min";
+    font-size: 0.7rem;
+    text-align: right;
+ }
+
+
+
 .receptCardHolder{
     display: grid;
     grid-template-areas: "rCardOne rCardTwo";
     gap: 1rem;   
-    
 }
 .receptCardHolder:nth-child(1) .receptCard{
     grid-area: "rCardOne";

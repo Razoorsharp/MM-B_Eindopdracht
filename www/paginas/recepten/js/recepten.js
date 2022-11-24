@@ -155,7 +155,7 @@ $.getJSON("../../json/recepten.json", function(data){
        // icon hoofd ingredient defineren
            iconGerecht = '</li><li class="receptHoofdIngr"><img src="../../images/icons/'+ pageResForIcons +'/'+ nrGerecht +'.png"></li>';
        // icon en tekst tijd 
-           iconTijd = '<li class="recentTime receptTime'+ nrTijd +'"><img src="../../images/icons/'+ pageResForIcons +'/163.png"></li></ul>'
+           iconTijd = '<li class="receptTime receptTime'+ nrTijd +'"><img src="../../images/icons/'+ pageResForIcons +'/163.png"></li></ul>'
    
         return iconGerei+iconGerecht+iconTijd;
         
