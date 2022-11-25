@@ -1,7 +1,8 @@
 @media only screen and (min-width: 1024px){
     
-    nav{
+    .topnav{
         width: 100%;
+        position: relative;
     
     }
     #showMenuLabel{
@@ -10,15 +11,34 @@
     #showMenu{
         display: none;    
     }
-    
+    .icon{
+        display: none;
+    }
+    #mylinks{
+        height: 2rem;
+
+    }
+    .navGlyphicons{
+        position: absolute;
+        top: 0;
+        right:0;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+
+#homeHeroCuisineLogo {
+    top: 0%;
+    width: 10%;
+    transform: translate(-50%, 0%);
+  
+}
     
     .boekenCard{
-        max-width: 750px;
+        width: 40vw;
     }
-    
-    .artikelCard{
-        max-width: 750px;
-    }
+   
     .homeRecepten{
         width: 90%;
            
@@ -42,7 +62,39 @@
         gap: 1rem;
     }
 
-        /* Recept card positions */
+            /* ARTIKEL CARDS */
+
+    .artikelCardHolder {
+        display: grid;
+        grid-template-areas: "aCardOne aCardTwo";
+        gap: 1rem;
+        width: 82vw;
+        margin: 0 auto;
+    }
+    .artikelCard {
+        /* width: 100%; */
+        display: flex;
+        align-content: center;
+        justify-items: center;
+        position: relative;
+        margin: 3rem 1rem;
+        border: 1px black solid;
+     
+    }
+    .artikelCard:nth-child(1){
+        grid-area: "aCardOne";
+
+    }
+    .artikelCard:nth-child(2){
+        grid-area: "aCardTwo";
+    
+    }
+    .artikelCard:nth-child(n+3){
+        display:none;
+    }
+
+ 
+        /* Recept card  */
     .receptCardHolder{
         display: grid;
         grid-template-areas: "rCardOne rCardTwo rCardThree";
@@ -50,13 +102,10 @@
         
     }
     .receptCard{
-        width:100%;
-        
+        width:27vw;
         max-width: 700px;
     }
     .receptImage{
-        width: 530px;
-        height: 500px;
         margin:0 auto;  
      }
     .receptCardHolder:nth-child(1) .receptCard{
@@ -71,26 +120,13 @@
         grid-area: "rCardThree";
         gap: 1rem;    
         }
-        /*  Artikel card positions */
-    .artikelCardHolder{
-        display: grid;
-        grid-template-areas: "aCardOne aCardTwo";
-    }
+      
+  
 
     .receptText img {
         max-width: 263px;
         height: 376px;
     }
     
-    .artikelCard:nth-child(1){
-        grid-area: "aCardOne";
-
-    }
-    .artikelCard:nth-child(2){
-        grid-area: "aCardTwo";
-    
-    }
-    .artikelCard:nth-child(n+3){
-        display:none;
-    }
+  
 }

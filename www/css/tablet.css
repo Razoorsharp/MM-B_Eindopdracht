@@ -14,7 +14,7 @@
 }
 .boekenCardHolder{
     display: flex;
-    width: 98vw;
+   
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -26,17 +26,14 @@
 .homeRecepten{
     width: 90%;
 }
-.boekenCardHolder{
-    width: 90%;
-}
+
 .receptCard{
     display: flex;
     width: 100%; 
     max-width: 400px;
  }
  .receptImage{
-    width: 350px;
-    height: 500px;
+    
     margin:0 auto;  
  }
  .receptTime30:after{

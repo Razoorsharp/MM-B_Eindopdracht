@@ -18,7 +18,7 @@ $.getJSON("./json/boeken.json", function(data){
     $.each(data, function(key, value){
         console.log(value);
               
-        boekenMarkup += `<div class="boekenCard"> <div class="BoekenCardBg" style="background-image: url('${value.image}');"></div>`; 
+        boekenMarkup += `<div class="boekenCard"> <div class="boekenCardBg" style="background-image: url('${value.image}');"></div>`; 
         boekenMarkup += '<p class="boekPrijs">'+ value.prijs +'</p>';
         boekenMarkup += '<div class="cardContent">';		
         boekenMarkup += '<p>'+ value.description +'</p><br><hr>';
