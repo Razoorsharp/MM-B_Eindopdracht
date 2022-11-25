@@ -3,8 +3,21 @@
 
 
 
-.boekenCard{
-    max-width: 750px;
+.boekenCard{  
+    margin: 2rem auto;
+    width: 100%;
+    max-width: unset;
+    height: 80vh;
+    background-origin: center;
+    background-position-y: center;
+    background-position-x: center;
+}
+.boekenCardHolder{
+    display: flex;
+    width: 98vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .artikelCard{
@@ -33,21 +46,21 @@
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    transform: translate(40%, 20%);
+    transform: translate(0%, 20%);
     content: "30 min";
-    font-size: 0.7rem;
+    font-size: 1rem;
     text-align: right;
  }
  .receptTime60:after{   
-    transform: translate(40%, 20%);
+    transform: translate(0%, 20%);
     content: "60 min";
-    font-size: 0.7rem;
+    font-size: 1rem;
     text-align: right;
  }
  .receptTime120:after{
-    transform: translate(40%, 20%);
+    transform: translate(0%, 20%);
     content: "120 min";
-    font-size: 0.7rem;
+    font-size: 1rem;
     text-align: right;
  }
 

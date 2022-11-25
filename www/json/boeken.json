@@ -2,7 +2,7 @@
 			{ 
 			"id" : "1", 		
 			"title" : "Jamie's Super Food1", 							
-			"image" : "images/placeholder.png", 						
+			"image" : "images/boeken/jamies-superfood/jamies-super-food.jpg", 						
 			"prijs" : "5", 		
 			"description" : "Heerlijk Gourmet Gold kattenvoer van Jamie.",
 			"buttonName" : "buttonboek1"
@@ -11,7 +11,7 @@
 		{ 
 			"id" : "2", 		
 			"title" : "Jamie's Super Food2", 							
-			"image" : "images/placeholder.png", 						
+			"image" : "images//boeken/simply-nigella/simply-nigella-boek.jpg", 						
 			"prijs" : "5", 		
 			"description" : "Heerlijk Gourmet Gold kattenvoer van Jamie.",
 			"buttonName" : "buttonboek2"

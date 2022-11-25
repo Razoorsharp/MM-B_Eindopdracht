@@ -137,7 +137,8 @@ body{
 .homeHeroMid input{
     font-size: 0px;
     transform: translate(-50%, -50%);
-    width: 2%;
+    width: 6%;
+    opacity: 50%;   
 }
 
 .homeHeroText{
@@ -210,7 +211,19 @@ width: 75%;
     margin:  auto;
     border: 1px black solid;
     max-width: 350px;
+    color: white;
     
+}
+.boekenCard p{
+    font-family: "merriweatheritalic";
+}
+.boekenCard hr{
+    font-size: 0px;
+    color: #418c9f;
+    background-color: #418c9f;
+    border: 3px solid #418c9f;
+    margin: 1rem auto;
+    width: 100%;
 }
 .cardContent{
     margin: 2%;

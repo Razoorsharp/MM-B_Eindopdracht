@@ -9,9 +9,7 @@ $(".no-JS").remove();   // removes warning div for the site if JS is disabled.
 var pageResForIcons = '';
 if (!window.matchMedia('(min-width: 768px)').matches) {
 	pageResForIcons = '32px';
-} else if(window.matchMedia('(min-width: 768px)').matches){
-	pageResForIcons = '64px';
-}
+} 
 
 // boeken card creator. 
 $.getJSON("./json/boeken.json", function(data){
@@ -19,8 +17,8 @@ $.getJSON("./json/boeken.json", function(data){
     console.log(data);
     $.each(data, function(key, value){
         console.log(value);
-        boekenMarkup += '<div class="boekenCard">';        
-        boekenMarkup += '<img src="'+ value.image +'" alt="">'; 
+              
+        boekenMarkup += `<div class="boekenCard" style="background-image: url('${value.image}');"`; 
         boekenMarkup += '<p class="boekPrijs">'+ value.prijs +'</p>';
         boekenMarkup += '<div class="cardContent">';		
         boekenMarkup += '<p>'+ value.description +'</p><br><hr>';
@@ -106,11 +104,11 @@ $.getJSON("./json/recepten.json", function(data){
  function receptIconPlacement(nrGerei,nrGerecht,nrTijd){ 
   
      // icon gerei defineren. 
-        iconGerei = '<ul><li class="receptGerei"><img src="images/icons/'+ pageResForIcons +'/'+ nrGerei +'.png"></li>';
+        iconGerei = '<ul><li class="receptGerei"><img src="images/icons/32px/'+ nrGerei +'.png"></li>';
     // icon hoofd ingredient defineren
-        iconGerecht = '</li><li class="receptHoofdIngr"><img src="images/icons/'+ pageResForIcons +'/'+ nrGerecht +'.png"></li>';
+        iconGerecht = '</li><li class="receptHoofdIngr"><img src="images/icons/32px/'+ nrGerecht +'.png"></li>';
     // icon en tekst tijd 
-        iconTijd = '<li class="recentTime receptTime'+ nrTijd +'"><img src="images/icons/'+ pageResForIcons +'/163.png"></li></ul>'
+        iconTijd = '<li class="recentTime receptTime'+ nrTijd +'"><img src="images/icons/32px/163.png"></li></ul>'
 
      return iconGerei+iconGerecht+iconTijd;
 
