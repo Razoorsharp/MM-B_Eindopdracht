@@ -21,6 +21,7 @@ body{
 
 
 }
+
     /* start navigation breakpoint */
 @media only screen and (max-width: 1023px){
     .mobile-container {
@@ -264,6 +265,10 @@ h1{
     text-transform: uppercase; 
     color: #418c9f;
 }
+section h1{
+    margin: 0 auto 0 8%;
+    text-align: left;
+}
 
 
 /* boeken */
@@ -331,7 +336,7 @@ h1{
     align-content: center;
     justify-items: center;
     position: relative;
-    margin:  0 auto;
+    margin:  1rem auto;
     border: 1px black solid;
     /* max-width: 350px; */
    
@@ -375,7 +380,7 @@ color: #d99a3f;
     align-content: center;
     justify-items: center;
     position: relative;
-   margin: 0 auto;
+   margin: 1rem auto;
     border: 1px black solid;
  }
  .receptCard:hover{
@@ -485,28 +490,51 @@ color: #d99a3f;
   /* OVER ONS GEDEELTE  */
 .homeOver{
     position: relative;
-    width:90vw;  
-    max-width: 90vw; 
+    /* width:90vw;  
+    max-width: 90vw;  */
     display: flex;
     align-content: center;
     justify-items: center;
     position: relative;
     margin:  1rem auto;
     
-}.homeOver em{
+}
+.homeOver article{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.homeOver img{
+    width: 90%;
+    align-self: center;
+   
+
+}
+.homeOver em{
     color: #418c9f;
+    align-self: flex-end;
+    text-align: right;
 }
 
-.homeOver p{
+
+.homeOver p:nth-child(2){
     margin-bottom: 1rem;
+    align-self: flex-end;
+    width: 95%;
 }
-.homeOver p{
+.homeOver p:nth-child(n+5){
     margin-bottom: 1rem;
+    align-self: flex-end;
+    text-align: right;
 }
-.homeOver h2{
+.homeOver h1{
     margin-bottom: 1rem;
     color: #418c9f;
     font-family: "Raleway-bold";
+    align-self: flex-start;
    
 
 }
