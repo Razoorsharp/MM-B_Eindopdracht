@@ -2,7 +2,7 @@ body{
     box-sizing: border-box;
     /* min-width: 375px; */
     min-width: 376px;
-    font-family: "Raleway medium" ;
+    font-family: "merriweatherregular" ;
     margin:0 auto;
 }
 .no-JS{
@@ -155,12 +155,12 @@ width: 75%;
 
 }
 .homeHeroText p{
-    /* font-family: "Raleway bold"; */
-    font-size: 1.5rem;
+    font-family: "merriweatherbold_italic";
+    font-size: 2rem;
 
 }
 .homeHeroText h2{
-    font-family: "Raleway bold";
+    font-family: "Raleway-bold";  
     font-size: 2rem;
 
 }
@@ -178,8 +178,8 @@ width: 75%;
    padding:0;
    width: 100%;
    height: 3rem;
-   font-family: "Raleway bold";
-   font-weight: bold;
+   font-family: "Raleway-bold";
+  
    background-color: #d98a3f;
    box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.2);
     
@@ -217,6 +217,7 @@ width: 75%;
 }
 
 
+
 button{
     border: none;
     width:100%;
@@ -226,13 +227,18 @@ button{
     text-align: center;
     text-decoration: none;
     font-size: 1.5rem;    
-    font-family: "Raleway bold";
-    font-weight: bold;
+    font-family: "Raleway-bold";
+   
     background-color: #d98a3f;
-    box-shadow: 0px 3px 6px 0px rgb(0 0 0 / 20%);  
+    box-shadow: 0px 3px 6px 0px rgb(0 0 0 / 20%); 
+    text-transform: uppercase;  
 }
-button:hover{
-    box-shadow: 0px 6px 8px 0px rgba(0,0,0,0.3);
+
+h1{
+    font-family: "Raleway-bold";   
+     
+    text-transform: uppercase; 
+    color: #418c9f;
 }
 
 
@@ -319,6 +325,13 @@ button:hover{
 .artikelcard > {
 margin-top: 0.5rem;
 }
+.artikelCard h2{
+    font-family: "Raleway-extra-bold";
+color: #d99a3f;
+}
+.artikelCard p{
+    font-family: "Raleway_medium";
+}
 
 
 .artikelCard:hover{
@@ -366,6 +379,10 @@ margin-top: 0.5rem;
      width: 100%;
      justify-content: space-between;
  }
+ .receptHead h2{
+     font-family: "Raleway_bold";
+     color: #d98a3f;
+ }
  .receptHead ul{
      display: flex;
      justify-content: flex-end;
@@ -379,6 +396,8 @@ margin-top: 0.5rem;
   
  }
  .receptTime30:after{
+     font-size: 0.9rem;
+     font-family: "Raleway_bold";
     position: absolute;
     display: flex;
     align-items: center;
@@ -387,8 +406,11 @@ margin-top: 0.5rem;
     text-align: center;
     transform: translate(10%, 20%);
     content: "30 min";
+    color: #418c9f;
  }
  .receptTime60:after{
+    font-size: 0.9rem;
+    font-family: "Raleway_bold";
     position: absolute;
     display: flex;
     align-items: center;
@@ -397,8 +419,11 @@ margin-top: 0.5rem;
     text-align: center;
     transform: translate(10%, 20%);
     content: "60 min";
+    color: #418c9f;
  }
  .receptTime120:after{
+    font-size: 0.9rem;
+    font-family: "Raleway_bold";
     position: absolute;
     display: flex;
     align-items: center;
@@ -407,6 +432,7 @@ margin-top: 0.5rem;
     text-align: center;
     transform: translate(10%, 20%);
     content: "120 min";
+    color: #418c9f;
  }
  
  .receptText ul{
@@ -425,8 +451,7 @@ margin-top: 0.5rem;
      width: 95%;
      margin: 1rem 0;
      font-size: 1.5rem;    
-     font-family: "Raleway bold";
-     font-weight: bold;
+     font-family: "Raleway-bold";
      background-color: #d98a3f;
      box-shadow: 0px 3px 6px 0px rgb(0 0 0 / 20%);
  }
@@ -450,7 +475,8 @@ margin-top: 0.5rem;
     position: relative;
     margin:  1rem auto;
     
-   
+}.homeOver em{
+    color: #418c9f;
 }
 
 .homeOver p{
@@ -461,6 +487,8 @@ margin-top: 0.5rem;
 }
 .homeOver h2{
     margin-bottom: 1rem;
+    color: #418c9f;
+    font-family: "Raleway-bold";
    
 
 }
