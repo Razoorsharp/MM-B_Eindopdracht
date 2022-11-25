@@ -1,4 +1,6 @@
 @import url("cssReset.css");
+ /* Load in bootstrap for glyphicons only */
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css");
 @import url("defaultMobile.css");
 @import url("tablet.css");
 @import url("desktop.css");
