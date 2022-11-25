@@ -322,17 +322,21 @@ h1{
 }
 
 /* Artikel kaart */
+.artikelCardHolder{
+    width:80vw;
+}
 .artikelCard{
-    width:90%;   
+    width:100%;   
     display: flex;
     align-content: center;
     justify-items: center;
     position: relative;
     margin:  0 auto;
     border: 1px black solid;
-    max-width: 350px;
+    /* max-width: 350px; */
    
 }
+
 .artikelCard img{
     width: 100%;
     height: 500px;
@@ -344,7 +348,7 @@ h1{
     z-index: 6;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 .artikelcard > {
 margin-top: 0.5rem;
@@ -363,7 +367,7 @@ color: #d99a3f;
 }
  /* Recepten card */
 .receptCardHolder{
-    width:100%;
+    width:80vw;
     margin: 0 auto;
 }
  .receptCard{
@@ -373,7 +377,6 @@ color: #d99a3f;
     position: relative;
    margin: 0 auto;
     border: 1px black solid;
-    max-width: 350px;
  }
  .receptCard:hover{
 
