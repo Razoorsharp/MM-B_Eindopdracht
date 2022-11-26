@@ -3,8 +3,7 @@ var d = document;
 // if(!d.getElementById("homeHeroBackImage"))return false;
     
 var leftRightField = d.getElementById("homeHeroMid") // eventlistener needed to check oif the left or right button was clicked. 
-var buttonLeft = d.getElementById("homePaginationLeft"); // button for leftscroll
-var buttonRight = d.getElementById("homePaginationRight"); //button for right scroll
+
 var heroText = d.getElementsByClassName("heroPaginationIntro"); // general text 
 var heroHead = d.getElementsByClassName("heroPaginationHead");// header within text
 var heroButton = d.getElementById("heroPaginaButton");// text within the button for the link. 

@@ -4,7 +4,7 @@
     "intro" : "leer de nieuwste recepten<br>en verwen jezelf en je gasten!", 							
     "head" : "Voor elke smaak<br>is er iets te vinden", 						
     "buttonText" : "Nieuwe Recepten", 		
-    "img" : "images/heroimages/1.jpg",
+    "img" : "images/hero/cuisine-keukenblad-ingredienten.jpg",
     "url" : "paginas/recepten/index.html"    
 },
 
