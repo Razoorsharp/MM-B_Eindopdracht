@@ -32,6 +32,7 @@ body{
         height: auto;
         color: white;       
         z-index: 99;
+        top: 0;
       }
       
       .topnav {
