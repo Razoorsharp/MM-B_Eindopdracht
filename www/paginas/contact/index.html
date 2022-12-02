@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Cuisine Cookbooks and More...</title>
+    <script src="https://kit.fontawesome.com/0e846e4156.js" crossorigin="anonymous"></script>
+    
+
+    <link rel="stylesheet" href="../../css/styles.css">
+    
+   
+   
+</head>
+
+<body>
+    <!-- <div class="no-JS">
+        <p> Please enable Javascript in your browser<br>Without it, this site will not function properly<br> Thank you for your understanding </p>
+    </div> -->
+    <div class="mobile-container">
+
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+            <div class="navGlyphicons">
+                <a href="#">
+                  <span class="glyphicon glyphicon-user"></span>
+                </a>
+                <a href="#">
+                  <span class="glyphicon glyphicon-shopping-cart"></span>
+                </a>
+              </div>
+          <a href="#home" class="active"></a>
+          <div id="myLinks">
+            <a href="#news">Campagne</a>
+            <a href="paginas/recepten/index.html">Recepten</a>
+            <a href="paginas/recepten/index.html">Nieuws</a>
+            <a href="paginas/recepten/index.html">Over ons</a>
+            <a href="paginas/recepten/index.html">Contact</a>
+            <a href="paginas/recepten/index.html">Shop</a>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="contactForm">
+        <h1>Contact</h1>
+        <form action="" method="get">
+            <label>Naam:</label>
+            <input class="contactVeld" type="text" name="naam" id="naam"/><span class="error" id="errorNaam">Gaarne een correcte naam opgeven</span>
+            <label>Email:</label>
+            <input class="contactVeld" type="text" name="email" id="Email"/><span class="error" id="errorEMail">Gaarne een correcte naam opgeven</span>
+            <label>bericht</label>
+            <input class="contactVeld" type="text" name="bericht" id="bericht"/><span class="error" id="errorBericht">Gaarne een correcte naam opgeven</span>
+            <<input type="checkbox" name="Nieuwsbrief" value="Nieuwsbrief" id="nieuwsbriefCheck"> Nieuwsbrief
+            <button type="submit">Verstuur</button>
+        </form>
+    </div>
+
+</section>
+
+</body>
+<script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
+</html>
