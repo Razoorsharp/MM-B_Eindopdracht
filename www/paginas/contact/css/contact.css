@@ -20,6 +20,10 @@ input{
     width: 100%;
     height: 3rem;
 }
+#bericht{
+    width: 100%;
+    
+}
 #nieuwsbriefCheck {
     -webkit-appearance: radio;
     -moz-appearance:    radio;
@@ -31,6 +35,5 @@ input{
     color: red;
     display:none;
 }
-#bericht{
-    height: 25rem;
-}
+
+
