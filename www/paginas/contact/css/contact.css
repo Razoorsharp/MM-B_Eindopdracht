@@ -1,4 +1,4 @@
-.contactForm{
+#contactForm{
     margin: 10% auto 0 auto;
 }
 form{
@@ -22,6 +22,7 @@ input{
 }
 #bericht{
     width: 100%;
+    resize: none;
     
 }
 #nieuwsbriefCheck {

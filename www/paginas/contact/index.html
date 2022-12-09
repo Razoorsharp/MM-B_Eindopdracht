@@ -51,21 +51,21 @@
 </section>
 
 <section>
-    <div class="contactForm">
+    <div id="contactForm">
         <h1>Contact</h1>
         <form action="" method="get">
-            <label>Naam:</label>
-            <input class="contactVeld" type="text" name="naam" id="naam"/><span class="error" id="errorNaam">Gaarne een correcte naam opgeven</span>
-            <label>Email:</label>
-            <input class="contactVeld" type="text" name="email" id="Email"/><span class="error" id="errorEMail">Gaarne een correcte email acdres opgeven</span>
-            <label>Bericht</label>
-            <textarea type="textarea" name="bericht" id="bericht" cols="40" rows="10"></textarea><span class="error" id="errorBericht">Gaarne een comment naam opgeven</span>
+            <label for="naam">Naam:</label>
+            <input class="contactVeld" type="text" name="Naam" id="naam"/><span class="error" id="errorNaam">Gaarne een correcte naam opgeven</span>
+            <label for="email">Email:</label>
+            <input class="contactVeld" type="text" name="Email" id="email"/><span class="error" id="errorEMail">Gaarne een correcte email acdres opgeven</span>
+            <label for="bericht">Bericht</label>
+            <textarea type="textarea" name="bericht" id="Bericht" cols="40" rows="11"></textarea><span class="error" id="errorBericht">Gaarne een comment naam opgeven</span>
             <div>
                 <input type="checkbox" name="Nieuwsbrief" value="Nieuwsbrief" id="nieuwsbriefCheck"> 
                 <p>Nieuwsbrief</p>
             </div>
            
-            <button type="submit">Verstuur</button>
+            <button type="submit" value="Verstuur" id="contactSubmit">Verstuur</button>
         </form>
     </div>
 
@@ -82,4 +82,5 @@
       }
     }
     </script>
+    <script src="js/contactForm.js"></script>
 </html>
