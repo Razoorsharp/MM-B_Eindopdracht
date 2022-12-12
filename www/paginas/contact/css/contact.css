@@ -25,12 +25,25 @@ input{
     resize: none;
     
 }
-#nieuwsbriefCheck {
-    -webkit-appearance: radio;
-    -moz-appearance:    radio;
-    appearance:         radio;
-    
-}
+input[type="checkbox"]{
+    /* visibility: hidden; */
+    /* position: absolute; */
+  }
+  input[type="checkbox"] + label:before{
+    height:12px;
+    width:12px;
+    margin-right: 2px;
+    content: " ";
+    display:inline-block;
+    vertical-align: baseline;
+    border:1px solid #777;
+  }
+  input[type="checkbox"]:checked + label:before{
+    background-color: black;
+  }
+  input[type="checkbox"] + label:before{
+    border-radius:50%;
+  }
 
 .error{
     color: red;

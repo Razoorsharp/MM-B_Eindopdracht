@@ -49,10 +49,28 @@ function createFeedback(welkVeld, status){
 // EVENT
 contactSubmit.addEventListener('click', function(e){
     var naamCorrect = valideerForm(naam);
-    var naamCorrect = valideerForm(email);
-    e.preventDefault();
+    var mailCorrect = valideerForm(email);
+    if(!mailCorrect || !naamCorrect){
+        e.preventDefault();
+    }else{  // Pas als allebei true zijn, dan werkt de submit pas. 
+        // form data conversie als hij submit.  
+            const form = document.getElementById('contactForm');
+
+            form.addEventListener('submit', callbackFunction); // draai callback functie als form submit wordt. 
+                                
+            function callbackFunction(event) {
+            event.preventDefault(); // prevent default om te zorgen dat het de form data niet direct verdwijnt. 
+            const myFormData = new FormData(event.target);
+
+            const formDataObj = {};
+            myFormData.forEach((value, key) => (formDataObj[key] = value)); // alle values sorteren. 
+            console.log(formDataObj); // weergeven van de value en keys in een object zodat dit later doorgezet kan worden naar een Json of database met behulp van PHP of API. 
+            };
+    };
+    
+    
 });
 
-  
+
 
    
