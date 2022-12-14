@@ -1,5 +1,5 @@
-var d = document;
 
+var d = document;
 
 
 
@@ -65,6 +65,8 @@ contactSubmit.addEventListener('click', function(e){
             const formDataObj = {};
             myFormData.forEach((value, key) => (formDataObj[key] = value)); // alle values sorteren. 
             console.log(formDataObj); // weergeven van de value en keys in een object zodat dit later doorgezet kan worden naar een Json of database met behulp van PHP of API. 
+
+        
             };
     };
     

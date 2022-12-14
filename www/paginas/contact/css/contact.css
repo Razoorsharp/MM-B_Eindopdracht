@@ -49,5 +49,9 @@ input[type="checkbox"]{
     color: red;
     display:none;
 }
+.singleHeroLogo{
+    width: 100%;
+    height: 20vh;
+}
 
 
