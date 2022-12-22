@@ -29,6 +29,7 @@ $.getJSON("./json/boeken.json", function(data){
     $('.boekenCardHolder').append(boekenMarkup);
 });
 
+
 // Artikellen Card ceator
 $.getJSON("./json/artikellen.json", function(data){
     var artikellenMarkup = '';
