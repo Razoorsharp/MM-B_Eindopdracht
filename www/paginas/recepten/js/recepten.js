@@ -49,7 +49,7 @@ $.getJSON("../../json/recepten.json", function(data){
     // loop for creating the cards
     $.each(data, function(key, value){
         
-        receptenMarkup += '<div class="receptCard" data-soort="'+ value.soort +'" data-gerei="'+ value.benodigdheden +'"><div class="cardSpacer"><div class="receptHead">';        
+        receptenMarkup += '<div class="receptCard" id="'+ value.id +'" data-soort="'+ value.soort +'" data-gerei="'+ value.benodigdheden +'"><div class="cardSpacer"><div class="receptHead">';        
         receptenMarkup += '<h2>'+ value.title +'</h2>';
         // defineer variabelen voor de juiste iconen gebaseerd op de Json
         let soortGerei = value.benodigdheden;
@@ -145,7 +145,9 @@ $.getJSON("../../json/recepten.json", function(data){
 
 
 	}); // eindechange event
- }); // END JSON REQUESTS
+ }).done(function() {
+    console.log( "second success" );
+  }); // END JSON REQUESTS
 
        // receptIconPLacement function. i = Sooftgerecht in de recepten constructor. en plaatst het benodigde icoon per recept card er in. 
        function receptIconPlacement(nrGerei,nrGerecht,nrTijd){ 
@@ -160,6 +162,12 @@ $.getJSON("../../json/recepten.json", function(data){
         return iconGerei+iconGerecht+iconTijd;
         
     }
+    console.log("ik wil clikken");
+    $(document).on('click', '.receptCard', function(){
+        console.log(this.id);
+        var url = 'http://localhost:5500/MM-B_Eindopdracht/www/paginas/recepten/show.html?receptId='+ this.id;
+        $(location).prop('href', url);
+      });
     
     
     
