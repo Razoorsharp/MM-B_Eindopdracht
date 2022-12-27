@@ -6,9 +6,8 @@
         height: auto;
         position: absolute;
        z-index: 2;
-        /* color: white;       
-        z-index: 99;
-        top: 0; */
+       
+        top: 0; 
       } 
       .topnav{
           position: relative;

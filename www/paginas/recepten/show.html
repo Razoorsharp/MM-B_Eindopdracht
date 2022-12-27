@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/0e846e4156.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/receptenStyle.css">
+    <link rel="stylesheet" href="css/receptenShow.css">
+    
 </head>
     
     <body>
@@ -46,21 +47,48 @@
         </div>
     </section>
     <section class="hero">
-        <div class=homeHero>
+        <div class=receptTopHero>
+            <div id="receptHeroBackground"></div>
             <img id="homeHeroCuisineLogo" src="../../images/cuisinelogo.png" alt="cuisine logo">
         
-        <div class="receptHero">
-            <h1 class="receptHeroTitle"></h1>
+            <div class="receptHero">
+                <h1 class="receptHeroTitle"></h1>
 
+            </div> 
         </div>
-        
-    </div>
+     
+    
 
         
     </section>
 
     <section name="receptData">
-        <div id="receptData"></div>
+        <div id="receptData">
+           <!-- <div class="contentSpacer">
+        <div class="receptHeader">
+        <h2>Ingredienten</h2>
+        <ul>
+            <li class="receptGerei"><img src="../../images/icons/32px/30.png"></li>
+            <li class="receptHoofdIngr"><img src="../../images/icons/32px/30.png"></li>
+            <li class="recentTime receptTime30"><img src="../../images/icons/32px/30.png"></li>
+        </ul>
+     </div>
+        <div class="recepList">
+            <ul>
+                <li>kjdkjabd</li>
+                <li>kbdjkdfbfkbf</li>
+                <li>kjdsbdfjkbfkdb</li>
+            </ul>
+        </div>
+        <div class="receptTekst">
+            <h2>Bereidingswijze</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptates minima natus aperiam et animi iure sunt sint fugiat, cum modi ab numquam blanditiis deserunt accusamus itaque aut error laborum.</p>
+
+        </div>
+
+    </div>
+</div> -->
+         
     </section>
     <section name="footer"><footer></footer></section>
 </body>
@@ -70,8 +98,19 @@ integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
 crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
 
-<script src="../../js/footer.js"></script>
+<script src="js/footer.js"></script>
 <script src="js/show.js"></script>
+<script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      }else {
+        x.style.display = "block";
+      }
+    }
+    </script>
+
 
 
 </html>
