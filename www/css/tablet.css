@@ -43,11 +43,11 @@
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    transform: translate(50%, 20%);
+    transform: translate(10%, 10%);
     content: "30 min";
     font-size: 1rem;
     text-align: right;
-    width: 100%;
+    width: 118%;
     right: 0rem;
  }
  .receptTime60:after{   
