@@ -5,6 +5,9 @@ body{
     font-family: "merriweatherregular" ;
     margin:0 auto;
 }
+p{
+    font-family: "Raleway_extra_bold";
+}
 .no-JS{
     z-index: 100;
     width: 100%;
@@ -90,11 +93,11 @@ body{
 #homeHeroCuisineLogo{
     position: absolute;
     left: 50%;
-    top: 4%;
+    top: 2%;
     width: 25%;
     transform: translate(-50%, 0%);
     z-index: 10;
-    max-width: 200px;
+    max-width: 98px;
 }
 #heroImageCarrousel{
     width: 50%;
