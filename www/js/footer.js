@@ -4,7 +4,7 @@ d = document;
           // FOOTER CRATION
       var footerMarkup ='';
       footerMarkup += '<div class="cardSpacer"><div class=footerIcons>';
-      footerMarkup += '<img src="images/cuisinelogo.png" alt="cuisine logo"><div class="footerIconsP">  <a><p></p></a> <a><p></p></a><a><p></p></a> </div> </div>';
+      footerMarkup += '<img src="/images/cuisinelogo.png" alt="cuisine logo"><div class="footerIconsP">  <a><p></p></a> <a><p></p></a><a><p></p></a> </div> </div>';
       footerMarkup += '<div class="footerText"><ul class="footerLinks">';
       footerMarkup += '<a href="paginas/campagne/index.html"><li>Campagne</li></a>';
       footerMarkup += '<a href="paginas/recepten/index.html"><li>Recepten</li></a>';
