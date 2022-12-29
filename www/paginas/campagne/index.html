@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/0e846e4156.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/receptenShow.css">
+    <link rel="stylesheet" href="css/campagne.css">
     
 </head>
     
@@ -31,12 +31,12 @@
               <a href="#home" class="active"></a>
               <div class="linkContainer" id="myLinks">
                 <div class="spacer"></div>
-                <a href="/paginas/campagne/index.html">Campagne</a>
-                <a href="/paginas/recepten/index.html">Recepten</a>
+                <a href="#news">Campagne</a>
+                <a href="paginas/recepten/index.html">Recepten</a>
                 <a href="#">Nieuws</a>
                 <div class="spacer"></div>
                 <a href="#">Over ons</a>
-                <a href="/paginas/contact/index.html">Contact</a>
+                <a href="paginas/contact/index.html">Contact</a>
                 <a href="#">Shop</a>
                 <div class="spacer"></div>
               </div>
@@ -47,50 +47,36 @@
         </div>
     </section>
     <section class="hero">
-        <div class=receptTopHero>
-            <div id="receptHeroBackground"></div>
-            <img id="homeHeroCuisineLogo" src="../../images/cuisinelogo.png" alt="cuisine logo">
+        <div class=campagneTopHero>
+            <div id="campagneHeroBackground"></div>
+            <img id="homeHeroCuisineLogo" src="/images/cuisinelogo.png" alt="cuisine logo">
         
-            <div class="receptHero">
-                <h1 class="receptHeroTitle"></h1>
+            <div class="campagneHero">
+                <h1 class="campagneHeroTitle"></h1>
 
             </div> 
         </div>
      
     
 
-        
-    </section>
 
-    <section name="receptData">
-        <div id="receptData">
-           <!-- <div class="contentSpacer">
-        <div class="receptHeader">        
-        <ul>
-            <li class="receptGerei"><img src="../../images/icons/32px/30.png"></li>
-            <li class="receptHoofdIngr"><img src="../../images/icons/32px/30.png"></li>
-            <li class="recentTime receptTime30"><img src="../../images/icons/32px/30.png"></li>
-        </ul>
-     </div>
-        <div class="receptList">
-            <h2>Ingredienten</h2>
-            <ul>
-                <li>kjdkjabd</li>
-                <li>kbdjkdfbfkbf</li>
-                <li>kjdsbdfjkbfkdb</li>
-            </ul>
-        </div>
-        <div class="receptTekst">
-            <h2>Bereidingswijze</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptates minima natus aperiam et animi iure sunt sint fugiat, cum modi ab numquam blanditiis deserunt accusamus itaque aut error laborum.</p>
 
-        </div>
+<div class="trailerPlayer">          
 
-    </div> -->
+    <video class="video-js video"
+    id="my-video" poster="../images/alice-title.png" preload="metadata"  controls data-setup="{}">
+        <source src="../video/Alice Through The Looking Glass 720p.mp4"
+                type="video/mp4">
+        <source src="../video/Alice Through The Looking Glass 720p.webm"
+                type="video/webm">
+        <p>Your browser does not support this video, please consider using <a
+               href="https://brave.com/">Brave Browser</a></p>
+    </video>
+    <script src="../js/video.js"></script>
+
 </div>
-         
-    </section>
-    <section name="footer"><footer></footer></section>
+
+
 </body>
 <script
 src="https://code.jquery.com/jquery-3.6.1.min.js"
