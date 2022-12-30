@@ -8,15 +8,16 @@
     position: relative;
 }
 #campagneHeroBackground{
-    background-image: url(/images/nigella/nigella_hero.jpeg);
+    background-image: url(/images/nigella/nigella_hero.jpg);
     opacity: 0.75;
-    width: 100vw;
+    width: 100%;
     height: 100%;
     position: absolute;
     background-position-y: center;
     background-position-x: center;
     background-repeat: no-repeat;
     overflow: hidden;
+    background-size: cover;
     top: -5%;
 }
 
@@ -24,6 +25,7 @@ h2{
     font-family: "Raleway-bold"; 
     color: #418c9f;
     font-size: 4rem;
+    text-transform: capitalize ;
 }
 .campagneHero{
     width: 100%;
@@ -39,6 +41,19 @@ h2{
     font-size: 5rem;
     text-shadow: 0px 3px 6px rgba(51,51,51,0.35);
 }
+.kokenMetNigellaHeadText p:nth-child(3){
+    font-family: "Raleway_medium";
+
+
+}
+.kokenMetNigellaList ul{
+    list-style-type: circle;
+    list-style-position: inside;
+}
+.kokenMetNigellaList li{
+    font-family: "Raleway_medium";
+    font-size: 1.2rem;
+}
 
 @media only screen and (max-width: 768px){
 
@@ -53,7 +68,34 @@ h2{
     
     }
 }
-@media only screen and (min-width: 768px){}
+@media only screen and (min-width: 768px){
+    .kokenMetNigella{
+        position: relative;
+        display: grid;
+        grid-template-areas:
+            "video"
+            "head1"
+            "head2 button";
+        grid-template-rows:  3fr 3rf 3rf;
+        grid-template-columns: 2fr;
+    }
+    .player{
+        grid-area: video;
+    }
+    .kokenMetNigellaHeadText{
+        height: 100%;
+        width: 100%;
+        grid-area: head1;
+    }
+    .kokenMetNigellaList{
+        grid-area: head2;
+    }
+    .kokenMetNigellaRegister{
+        grid-area: button;
+    }
+
+
+}
 @media only screen and (min-width: 1023px){}
 
 .spacer{
