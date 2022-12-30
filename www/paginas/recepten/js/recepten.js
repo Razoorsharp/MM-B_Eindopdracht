@@ -165,7 +165,7 @@ $.getJSON("../../json/recepten.json", function(data){
     console.log("ik wil clikken");
     $(document).on('click', '.receptCard', function(){
         console.log(this.id);
-        var url = 'http://localhost:5500/MM-B_Eindopdracht/www/paginas/recepten/show.html?receptId='+ this.id;
+        var url = '/paginas/recepten/show.html?receptId='+ this.id;
         $(location).prop('href', url);
       });
     
