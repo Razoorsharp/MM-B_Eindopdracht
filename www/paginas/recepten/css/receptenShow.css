@@ -79,6 +79,9 @@ h2{
         font-size: 2rem;
 
     }
+    .receptTekst{
+        position: relative;
+    }
     .receptTekst h2{
         grid-area: bereid;
     
