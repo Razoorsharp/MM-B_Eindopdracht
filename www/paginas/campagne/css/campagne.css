@@ -73,11 +73,15 @@ h2{
         position: relative;
         display: grid;
         grid-template-areas:
-            "video"
-            "head1"
+            "video video"
+            "head1 head1"
             "head2 button";
-        grid-template-rows:  3fr 3rf 3rf;
-        grid-template-columns: 2fr;
+        /* grid-template-rows:  2fr 3rf 2rf; */
+        /* grid-template-columns: 2fr; */
+    }
+    #nigellaRegbtn{
+        margin: auto 0;
+
     }
     .player{
         grid-area: video;
@@ -96,7 +100,39 @@ h2{
 
 
 }
-@media only screen and (min-width: 1023px){}
+@media only screen and (min-width: 1023px){
+
+    .kokenMetNigella{
+        position: relative;
+        display: grid;
+        grid-template-areas:
+            "head1 video"
+            "head2 video"
+            "button video";
+        grid-template-rows:  1fr 100% ;
+        grid-template-columns: 40% 1fr;
+    }
+    #nigellaRegbtn{
+        margin: auto 0;
+        
+    }
+    .player{
+        grid-area: video;
+    }
+    .kokenMetNigellaHeadText{
+        height: 100%;
+        width: 100%;
+        grid-area: head1;
+    }
+    .kokenMetNigellaList{
+        grid-area: head2;
+    }
+    .kokenMetNigellaRegister{
+        grid-area: button;
+    }
+
+
+}
 
 .spacer{
     width: 95%;
