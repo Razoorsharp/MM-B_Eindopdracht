@@ -109,8 +109,9 @@ h2{
             "head1 video"
             "head2 video"
             "button video";
-        grid-template-rows:  1fr 100% ;
+        grid-template-rows:  8fr ;
         grid-template-columns: 40% 1fr;
+        gap: 1rem;
     }
     #nigellaRegbtn{
         margin: auto 0;
@@ -129,6 +130,8 @@ h2{
     }
     .kokenMetNigellaRegister{
         grid-area: button;
+        width: 45%;
+        margin: 0 auto;
     }
 
 
