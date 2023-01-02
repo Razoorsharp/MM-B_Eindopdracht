@@ -56,7 +56,7 @@ $.getJSON("./json/recepten.json", function(data){
         if(receptCount == 4)return; // op de hoofd pagina willen we maar 3 recepten zien. dus kappen we hem hier af
         // sorteer functie moet nog gebouwd worden op basis van json datum van meest recente toegevoegd.  
 
-        receptenMarkup += '<div class="receptCard"><div class="cardSpacer"><div class="receptHead">';        
+        receptenMarkup += '<div class="receptCard" id="'+ value.id +'"><div class="cardSpacer"><div class="receptHead">';        
         receptenMarkup += '<h2>'+ value.title +'</h2>';
         // defineer variabelen voor de juiste iconen gebaseerd op de Json
         let soortGerei = value.benodigdheden;
@@ -114,6 +114,14 @@ $.getJSON("./json/recepten.json", function(data){
      return iconGerei+iconGerecht+iconTijd;
 
  }
+
+ // Recepten click
+
+ $(document).on('click', '.receptCard', function(){
+    console.log(this.id);
+    var url = '/paginas/recepten/show.html?receptId='+ this.id;
+    $(location).prop('href', url);
+  });
 
 }); // end/closing of script
  

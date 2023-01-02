@@ -1,16 +1,21 @@
 @import url(../../../css/cssReset.css);
 @import url(../../../css/styles.css);
-.receptenFilter{
+.receptenFilter {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;;
+    margin: 10% 0% auto;
+}
+.receptenFilter h2{
+    align-self: center;
 }
 .ingredienten{
+   
 
 }
 .gerei{
+   
 
 }
 /* Recepten card */

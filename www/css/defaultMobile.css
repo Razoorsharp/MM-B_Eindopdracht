@@ -6,7 +6,8 @@ body{
     margin:0 auto;
 }
 p{
-    font-family: "Raleway_extra_bold";
+    font-family: "Raleway_medium";
+    font-size:  2rem;
 }
 .no-JS{
     z-index: 100;
@@ -637,6 +638,7 @@ footer a:active{
 
 footer li{
     list-style-type: none;
+    font-size: 2rem;
 
 }
 footer ul{
