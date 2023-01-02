@@ -120,6 +120,7 @@ h2{
     .player{
         grid-area: video;
     }
+    
     .kokenMetNigellaHeadText{
         height: 100%;
         width: 100%;
@@ -133,6 +134,10 @@ h2{
         width: 45%;
         margin: 0 auto;
     }
+    .video-js {
+        height: 100%;
+    }
+
 
 
 }
