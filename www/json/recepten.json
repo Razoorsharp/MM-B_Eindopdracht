@@ -2,9 +2,10 @@
     { 
         "id" : "1", 		
         "title" : "bami soep", 
+        "author": "",
         "ingredienten" :["1 mienestje", "1 bosje lente ui", "1 bosje koriander", "1 chillipeper", "misoboillion"],  
         "tekstComplete": " placeholder1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget placerat nisl. Etiam vitae dui nec ipsum tempor vehicula. Donec est enim, finibus vitae lacinia in, lacinia quis velit. Donec vel convallis sapien, at scelerisque mauris. Etiam sit amet hendrerit libero, quis tincidunt dolor. Mauris et egestas neque. Vestibulum pulvinar eros a urna elementum dictum. Nulla tempus, odio in ullamcorper fermentum, quam dui maximus eros, vel pulvinar enim ipsum vitae.", 							
-        "image" : "images/recepten/noodle-soup.jpg", 
+        "image" : "/images/recepten/noodle-soup.jpg", 
         "buttonTekst" : "bami soep maken",
         "hoofdIngredient": 61,
         "soort": "Gevogelte",
@@ -16,7 +17,7 @@
         "title" : "lekkere soep", 
         "ingredienten" :["placeholder2","1 mienestje", "1 bosje lente ui", "1 bosje koriander", "1 chillipeper", "misoboillion"],  
         "tekstComplete": " placeholder 2Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget placerat nisl. Etiam vitae dui nec ipsum tempor vehicula. Donec est enim, finibus vitae lacinia in, lacinia quis velit. Donec vel convallis sapien, at scelerisque mauris. Etiam sit amet hendrerit libero, quis tincidunt dolor. Mauris et egestas neque. Vestibulum pulvinar eros a urna elementum dictum. Nulla tempus, odio in ullamcorper fermentum, quam dui maximus eros, vel pulvinar enim ipsum vitae.", 							
-        "image" : "images/recepten/tagliatelle.jpg", 
+        "image" : "/images/recepten/tagliatelle.jpg", 
         "buttonTekst" : "lekkere soep maken",
         "hoofdIngredient": 129,
         "soort": "Vlees",
@@ -28,7 +29,7 @@
         "title" : "vieze soep", 
         "ingredienten" :["placeholder3","1 mienestje", "1 bosje lente ui", "1 bosje koriander", "1 chillipeper", "misoboillion"],  
         "tekstComplete": " placeholder3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget placerat nisl. Etiam vitae dui nec ipsum tempor vehicula. Donec est enim, finibus vitae lacinia in, lacinia quis velit. Donec vel convallis sapien, at scelerisque mauris. Etiam sit amet hendrerit libero, quis tincidunt dolor. Mauris et egestas neque. Vestibulum pulvinar eros a urna elementum dictum. Nulla tempus, odio in ullamcorper fermentum, quam dui maximus eros, vel pulvinar enim ipsum vitae.", 							
-        "image" : "images/recepten/thai-chicken.jpg", 
+        "image" : "/images/recepten/thai-chicken.jpg", 
         "buttonTekst" : "vieze soep maken",
         "hoofdIngredient": 131,
         "soort": "Vegetarisch",
@@ -39,14 +40,43 @@
     { 
         "id" : "4", 		
         "title" : "courgette-lasagne", 
+        "author": "Nigella Lawson",
         "ingredienten" :[" 250 g verse lasagnebladen "," 500 g ricotta ", " 250 g mozzarella ", " 2 st courgettes ", " 15 g Parmezaanse kaas "],  
         "tekstComplete": " Verwarm de oven voor tot 200°C. Snijd de courgette in lange linten met behulp van een mandoline of dunschiller. Vet de ovenschaal in. Hak de Parmezaanse kaas grof. Maak een pesto alle ingrediënten in een keukenmachine te malen tot een glad mengsel. Breng eventueel verder op smaak met zout en peper. Verdeel een laag lasagnevellen over een ingevette ovenschaal en bestrijk met ricotta met de achterkant van een lepel. Leg er een laag courgettelinten op en bestrijk met een dunne laag pistachepesto. Herhaal tot de ingrediënten bijna op zijn, maar bewaar wat courgettelinten en ricotta. Eindig met stukjes gescheurde mozzarella en daarover een laag pasta. Bestrijk de laatste laag pasta met de rest van de ricotta en leg daar de laatste courgettelinten op. Rasp de Parmezaanse kaas boven de ovenschaal. Bak 20-30 minuten in het midden van de oven goudbruin.     ", 							
-        "image" : "images/recepten/courgette-lasagne.jpg", 
+        "image" : "/images/recepten/courgette-lasagne.jpg", 
         "buttonTekst" : "Lasagne Maken",
         "hoofdIngredient": 131,
         "soort": "Vegetarisch",
         "benodigdheden": 135,
         "tijd": 60
 
+    },
+    {
+        "id" : "5", 		
+        "title" : "Gebraden kip met knoflook", 
+        "author": "Nigella Lawson",
+        "ingredienten" :[" 1 kip (2 tot 2¼ kg), "," 1 bol knoflook, in ongepelde teentjes  ", " 2 citroenen ", " handjevol verse tijm ", " 3 eetlepels olijfolie ", "150 ml witte wijn"],  
+        "tekstComplete": " Verwarm de oven voor op 160 °C  140 °C of gasovenstand 3. Leg de stukken kip in een braadslee en doe de knoflook, stukjes citroen en tijm erbij. Trek daarvoor de blaadjes tijm grofweg van de takjes af en laat er een paar heel om later ter garnering te gebruiken. Giet de olie erbij, meng alles met je handen door elkaar en doe het mengsel over in de braadslee. Zorg dat de stukken kip met het vel naar boven liggen. Sprenkel er de witte wijn op en maal er wat zwarte peper over, dek de braadslee strak af met aluminiumfolie en zet hem 2 uur in een oven die je op de smaak-intensiverende lage temperatuur van 160 °C hebt voorverwarmd. Haal het folie weg en verhoog de oventemperatuur tot 200 °C / 180 °C of gasovenstand 6. Bak de kip nog 30 tot 45 minuten, tot het vel mooi goudbruin is en de citroenen aan de randjes beginnen te schroeien en te karameliseren Ik serveer dit gerecht het liefst zo, regelrecht uit de braadslee. Strooi er alleen nog wat tijm over en schep de borden vol. ", 							
+        "image" : "/images/recepten/lawson-kip-knoflook-citroen.jpg", 
+        "buttonTekst" : "Kip met knoflook maken",
+        "hoofdIngredient": 61,
+        "soort": "Gevogelte",
+        "benodigdheden": 186,
+        "tijd": 120
+
+    },
+    {
+        "id" : "6", 		
+        "title" : "Bananenbrood", 
+        "author": "Nigella Lawson",
+        "ingredienten" :[" 100 g sultana's (rozijnen)"," 75 ml bourbon of bruine rum", " 175 g bloem ", " 2 theelepels bakpoeder", " ½ theelepel dubbelkoolzure soda", "125 g boter, gesmolten", "150 g suiker", "2 grote eieren", "4 kleine, heel rijpe bananen","60 g walnoten, gehakt", "1 theelepel vanille-extract"],  
+        "tekstComplete": " Verwarm de oven voor op 170 °C, gasovenstand 3, en begin aan de rest. Werk met je handen of met behulp van een houten lepel bloem, bakpoeder, dubbelkoolzure soda en ½ theelepel zout door elkaar in een middelgrote kom. Klop in een grote kom de gesmolten boter en de suiker door elkaar. Klop er een voor een de eieren door en vervolgens de geprakte bananen. Roer er met je houten lepel de walnoten, uitgelekte sultana's en het vanille-extract door. Roer er het bloemmengsel in drie porties door. Roer steeds goed voor je de volgende portie bloem erbij doet. Doe het beslag over in de cakevorm en zet hem 60 tot 75 minuten in het midden van de oven. Als hij gaar is komt een tandenstoker of breinaald die je erin steekt er min of meer schoon uit. Laat het bananenbrood in de vorm op een rooster afkoelen en snijd het in dikke of dunne plakken, wat je wilt.", 							
+        "image" : "/images/recepten/awson-bananenbrood.jpg", 
+        "buttonTekst" : "Bananenbrood Maken",
+        "hoofdIngredient": 131,
+        "soort": "Vegetarisch",
+        "benodigdheden": 135,
+        "tijd": 60
     }
+
 ]

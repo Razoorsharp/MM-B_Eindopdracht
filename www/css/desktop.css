@@ -77,6 +77,9 @@
         grid-area: "bCardThree";
         gap: 1rem;
     }
+    .boekenCardBg{
+        background-size: cover;
+    }
 
             /* ARTIKEL CARDS */
 
