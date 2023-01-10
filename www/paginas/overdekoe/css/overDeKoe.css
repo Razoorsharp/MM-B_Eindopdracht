@@ -1,0 +1,25 @@
+@import url(/css/styles.css);
+
+#animation_container{
+    /* position:absolute; */
+	margin:auto;
+	left:0;right:0;
+	top:0;bottom:0;
+    background-color:rgba(255, 255, 255, 1.00); 
+    width:800px; 
+    height:600px;
+}
+#canvas{
+    position: absolute; 
+    display: block; 
+    background-color:rgba(255, 255, 255, 1.00);
+}
+#dom_overlay_container{
+    pointer-events:none; 
+    overflow:hidden; 
+    width:800px; 
+    height:600px; 
+    position: absolute; 
+    left: 0px; top: 0px; 
+    display: block;
+}
