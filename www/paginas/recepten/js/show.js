@@ -36,6 +36,7 @@ $(document).ready(function () {
             console.log(data);
             $.each(data, function(key, value){
                 if(value.id == receptId){
+                    document.title = value.title;
 
                       // plaats correct background image in de hero. 
                       var backgroundimageUrl = "../../" + value.image;
