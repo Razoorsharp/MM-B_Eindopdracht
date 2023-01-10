@@ -23,7 +23,8 @@ lib.ssMetadata = [];
 }).prototype = p = new cjs.MovieClip();
 // symbols:
 
-
+function playSound(id, loop, offset) {
+	return createjs.Sound.play(id, {'interrupt':createjs.Sound.INTERRUPT_EARLY, 'loop': loop, 'offset': offset});}
 
 (lib.Path = function() {
 	this.initialize(img.Path);
