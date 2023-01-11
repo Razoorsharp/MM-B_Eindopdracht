@@ -58,6 +58,9 @@ h2{
         height: 250px;
        
     }
+     /* *NOTE : krijg het niet voor elkaar om te voorkomen 
+     dat de tekst in tablet en desktop over de footer gaan. zelfs zonder grid.. 
+     dit werkt op iedere andere pagina wel.  */
     .contentSpacer{
         display: grid;
         grid-template-areas:

@@ -389,6 +389,7 @@ color: #d99a3f;
     position: relative;
    margin: 1rem auto;
     border: 1px black solid;
+    width: 100%;
  }
  .receptCard:hover{
 

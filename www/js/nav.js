@@ -12,11 +12,11 @@ $(document).ready(function(){
     navigationMarkup += '<a href="#home" class="active"></a><div class="linkContainer" id="myLinks"><div class="spacer"></div>';
     navigationMarkup += '<a href="/paginas/campagne">Campagne</a>';
     navigationMarkup += '<a href="/paginas/recepten/index.html">Recepten</a>';
-    navigationMarkup += '<a href="#">Nieuws</a>';
+    navigationMarkup += '<a href="/paginas/nieuws/index.html">Nieuws</a>';
     navigationMarkup += '<div class="spacer"></div>';
-    navigationMarkup += '<a href="#">Over ons</a>';
+    navigationMarkup += '<a href="/paginas/overons/index.html">Over ons</a>';
     navigationMarkup += '<a href="/paginas/contact">Contact</a>';
-    navigationMarkup += '<a href="#">Shop</a>';
+    navigationMarkup += '<a href="/paginas/shop/index.html">Shop</a>';
     navigationMarkup += '<div class="spacer"></div></div>';
     navigationMarkup += ' <a href="#" class="icon" id="navClick" ><i class="fa fa-bars"></i></a></div></div>';
 

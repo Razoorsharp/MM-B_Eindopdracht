@@ -1,0 +1,28 @@
+@import url(/css/styles.css);
+
+
+.spacer{
+    width: 95%;
+    margin: 0 auto;
+}
+section h1{
+    margin: 0;
+}
+.campagneTopHero{
+    height: 80vh;
+    margin: 2rem 0;
+    position: relative;
+}
+
+
+@media only screen and (min-width: 768px){
+  
+
+
+}
+@media only screen and (min-width: 1023px){
+
+
+
+}
+

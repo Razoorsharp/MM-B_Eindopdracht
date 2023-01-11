@@ -14,9 +14,12 @@ if (!window.matchMedia('(min-width: 768px)').matches) {
 // boeken card creator. 
 $.getJSON("./json/boeken.json", function(data){
     var boekenMarkup = '';
+    var bookCount =0;
     console.log(data);
     $.each(data, function(key, value){
         console.log(value);
+        if (bookCount <2){
+            bookCount++
               
         boekenMarkup += `<div class="boekenCard"> <div class="boekenCardBg" style="background-image: url('${value.image}');"></div>`; 
         boekenMarkup += '<p class="boekPrijs">'+ value.prijs +'</p>';
@@ -24,7 +27,9 @@ $.getJSON("./json/boeken.json", function(data){
         boekenMarkup += '<p>'+ value.description +'</p><br><hr>';
         boekenMarkup += '<h2>'+ value.title +'</h2>';
         boekenMarkup += '<button>'+ value.buttonName +'</button>';
-        boekenMarkup += '</div></div></div>';    
+        boekenMarkup += '</div></div></div>';   
+        }
+       
     });
     $('.boekenCardHolder').append(boekenMarkup);
 });
