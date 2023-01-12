@@ -7,12 +7,13 @@ var gereiFilter = d.getElementById('gereiHolder');
 
 
 
-var pageResForIcons = '';
-if (!window.matchMedia('(min-width: 768px)').matches) {
-	pageResForIcons = '32px';
-} else if(window.matchMedia('(min-width: 768px)').matches){
-	pageResForIcons = '64px';
-}
+//var pageResForIcons = ''; // dit was een functie om bepaalde iconen te bepalen op basis van window
+// wel laten staan ter referentie. 
+// if (!window.matchMedia('(min-width: 768px)').matches) {
+// 	pageResForIcons = '32px';
+// } else if(window.matchMedia('(min-width: 768px)').matches){
+// 	pageResForIcons = '64px';
+// }
 $.getJSON("../../json/recepten.json", function(data){
     var receptenMarkup = '';
     var filterIngredienten= '';  // lijst met HTML die gebouwd wordt op basis van Json Soort
@@ -151,13 +152,14 @@ $.getJSON("../../json/recepten.json", function(data){
 
        // receptIconPLacement function. i = Sooftgerecht in de recepten constructor. en plaatst het benodigde icoon per recept card er in. 
        function receptIconPlacement(nrGerei,nrGerecht,nrTijd){ 
-  
+        // pageResForIcons werd hier onder gebruikt om te bepalen of de map 32px of 64px gebruikt moest worden. 
+        // leuk systeem maar niet meer relevant, toch er in gelaten om "kunde" te laten zien.. maar om esthetische redenen er vanaf gestapt
         // icon gerei defineren. 
-           iconGerei = '<ul><li class="receptGerei"><img src="../../images/icons/'+ pageResForIcons +'/'+ nrGerei +'.png"></li>';
+           iconGerei = '<ul><li class="receptGerei"><img src="/images/icons/32px/'+ nrGerei +'.png"></li>';
        // icon hoofd ingredient defineren
-           iconGerecht = '</li><li class="receptHoofdIngr"><img src="../../images/icons/'+ pageResForIcons +'/'+ nrGerecht +'.png"></li>';
+           iconGerecht = '</li><li class="receptHoofdIngr"><img src="/images/icons/32px/'+ nrGerecht +'.png"></li>';
        // icon en tekst tijd 
-           iconTijd = '<li class="receptTime receptTime'+ nrTijd +'"><img src="../../images/icons/'+ pageResForIcons +'/163.png"></li></ul>'
+           iconTijd = '<li class="receptTime receptTime'+ nrTijd +'"><img src="/images/icons/32px/163.png"></li></ul>'
    
         return iconGerei+iconGerecht+iconTijd;
         
