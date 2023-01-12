@@ -8,13 +8,37 @@
 section h1{
     margin: 0;
 }
-.campagneTopHero{
+.accountTopHero{
     height: 80vh;
     margin: 2rem 0;
     position: relative;
 }
+/* button{
+    width: 80%;
+} */
 
 
+#persoonlijkeGegevensForm {
+    width: 80%;
+
+}
+label{
+    font-family: "merriweatherbold";
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #418c9f;
+}
+#persoonlijkeGegevensForm div{
+    display: flex;
+    flex-direction: column;
+
+}
+#inlogForm div{
+    display: flex;
+    flex-direction: column;
+
+
+}
 @media only screen and (min-width: 768px){
   
 
