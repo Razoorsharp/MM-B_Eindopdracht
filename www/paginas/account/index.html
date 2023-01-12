@@ -41,38 +41,39 @@
 <hr>
 <section id="accountOptions"> <!-- accountOptions kan gebruikt worden om de inhoud op basis van keuzes in Js te "inserten"-->
     <h1>Persoonlijke gegevens</h1>
-    <form id="persoonlijkeGegevensForm">
+    <div id="persoonlijkeGegevensForm">
+    <form action="" method="get" id="pgf">
         <div>
-            <label id="voornaam">Voornaam</label>
-            <input for="voornaam" type="text" required placeholder="Uw Voornaam"/>
+            <label for="voornaam">Voornaam</label>
+            <input name="voornaam" id="voornaam" type="text" value="" required placeholder="Uw Voornaam"/>
         </div>
         <div>
-            <label id="tussenvoegsel">Tussenvoegsel</label>
-            <input for="tussenvoegsel" type="text" placeholder="Uw Tussenvoegsels"/>
+            <label for="tussenvoegsel">Tussenvoegsel</label>
+            <input id="tussenvoegsel" type="text" placeholder="Uw Tussenvoegsels"/>
         </div>
         <div>
-            <label id="achternaam">Achternaam</label>
-            <input for="achternaam" type="text" required placeholder="Uw Achternaam"/>
+            <label for="achternaam">Achternaam</label>
+            <input id="achternaam" type="text" required placeholder="Uw Achternaam"/>
         </div>
         <div>
-            <label id="bedrijfsnaam">Bedrijfsnaam</label>
-            <input for="bedrijfsnaam" type="text" placeholder="Uw Bedrijfsnaam"/>
+            <label for="bedrijfsnaam">Bedrijfsnaam</label>
+            <input id="bedrijfsnaam" type="text" placeholder="Uw Bedrijfsnaam"/>
         </div>
         <div>
-            <label id="geboortedatum">Geboortedatum</label>
-            <input for="geboortedatum" type="text" placeholder="Voorbeeld DD-MM-YYYY" required/>
+            <label for="geboortedatum">Geboortedatum</label>
+            <input id="geboortedatum" type="text" placeholder="Voorbeeld DD-MM-YYYY" required/>
         </div>
         <div>
-            <label id="straat">Straat</label>
-            <input for="straat" type="text" placeholder="Uw Straat" required/>
+            <label for="straat">Straat</label>
+            <input id="straat" type="text" placeholder="Uw Straat" required/>
         </div>
         <div>
-            <label id="huisnummer">Huisnummer</label>
-            <input for="huisnummer" type="text" placeholder="Uw Huisnummer" required/>
+            <label for="huisnummer">Huisnummer</label>
+            <input id="huisnummer" type="text" placeholder="Uw Huisnummer" required/>
         </div>
         <div>
-            <label id="postcode">Postcode</label>
-            <input for="postcode" type="text" placeholder="Uw Postcode" required/>
+            <label for="postcode">Postcode</label>
+            <input id="postcode" type="text" placeholder="Uw Postcode" required/>
         </div>
         <div> 
            <input type="radio" id="nederland" name="land" value="nederland" checked>
@@ -80,7 +81,7 @@
            <input type="radio" id="anders" name="land" value="anders" checked>
            <label for="anders">anders:</label>
            <div>
-            <input for="anders" type="text" placeholder=""/>
+            <input id="anders" type="text" placeholder=""/>
            </div>
            
         </div>
@@ -91,6 +92,9 @@
         <button id="gegevensSubmit" type="submit">Invoeren</button>  <!-- *NOTE: button zit niet in wireframe, maar een duidelijk onderscheid tussen persoonlijke gegevens aanpassen en wachtwoord wijzigen is logischer. -->
 
       </form>
+      </div>
+
+
       <h1>InlogGegevens</h1>
       <form id="inlogForm" action="#">
         <div>
