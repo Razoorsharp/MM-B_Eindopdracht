@@ -30,6 +30,15 @@
 }
         /* DESKTOP BREAK */
 @media only screen and (min-width: 1024px){
+    .poep{
+        display: grid;
+        grid-template-areas:
+        "tekst tekst",
+        "soort gerei";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:1fr 1fr ;
+    }
+
 
 
 }
