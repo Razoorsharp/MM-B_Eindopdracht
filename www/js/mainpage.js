@@ -12,7 +12,7 @@ if (!window.matchMedia('(min-width: 768px)').matches) {
 } 
 
 // boeken card creator. 
-$.getJSON("./json/boeken.json", function(data){
+$.getJSON("/json/boeken.json", function(data){
     var boekenMarkup = '';
     var bookCount =0;
     console.log(data);
@@ -36,7 +36,7 @@ $.getJSON("./json/boeken.json", function(data){
 
 
 // Artikellen Card ceator
-$.getJSON("./json/artikellen.json", function(data){
+$.getJSON("/json/artikellen.json", function(data){
     var artikellenMarkup = '';
     console.log(data);
     $.each(data, function(key, value){

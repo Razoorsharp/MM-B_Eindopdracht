@@ -4,17 +4,17 @@
 			"id" : "1", 		
 			"title" : "welk deel van de koe?", 
             "tekstPreview" : "Lees waar de steak, entrecote, ossenhaas en ribeye precies vandaan komen. Elk deel van de koe heeft zijn eigen malsheid en stevigheid. Ontdek welk stuk vlees de slager het liefst voor zichzelf houdt…",
-            "tekstComplete": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget placerat nisl. Etiam vitae dui nec ipsum tempor vehicula. Donec est enim, finibus vitae lacinia in, lacinia quis velit. Donec vel convallis sapien, at scelerisque mauris. Etiam sit amet hendrerit libero, quis tincidunt dolor. Mauris et egestas neque. Vestibulum pulvinar eros a urna elementum dictum. Nulla tempus, odio in ullamcorper fermentum, quam dui maximus eros, vel pulvinar enim ipsum vitae.", 							
-			"image" : "images/placeholder.png", 
+            "tekstComplete": "", 							
+			"image" : "/images/artikellen/koe/koe.jpg", 
 			"buttonTekst" : "meer over de koe"
 		},
 		
 		{ 
 			"id" : "2", 		
-			"title" : "artikel omdat het moet.", 
-            "tekstPreview" : "Lees waar de steak, entrecote, ossenhaas en ribeye precies vandaan komen. Elk deel van de koe heeft zijn eigen malsheid en stevigheid. Ontdek welk stuk vlees de slager het liefst voor zichzelf houdt…",
+			"title" : "Sushi, lekkernij uit Japan", 
+            "tekstPreview" : "Sushi, razend populair bij de jongeren, rauwe vis het millenial snoepgoed.",
             "tekstComplete": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget placerat nisl. Etiam vitae dui nec ipsum tempor vehicula. Donec est enim, finibus vitae lacinia in, lacinia quis velit. Donec vel convallis sapien, at scelerisque mauris. Etiam sit amet hendrerit libero, quis tincidunt dolor. Mauris et egestas neque. Vestibulum pulvinar eros a urna elementum dictum. Nulla tempus, odio in ullamcorper fermentum, quam dui maximus eros, vel pulvinar enim ipsum vitae.", 							
-			"image" : "images/placeholder.png",
+			"image" : "/images/artikellen/sushi/sushi-plank.jpg",
 			"buttonTekst" : "meer over de koe"
 		}		
      ]
