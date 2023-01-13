@@ -1,14 +1,23 @@
 @import url(../../../css/cssReset.css);
 @import url(../../../css/styles.css);
-.receptenFilter {
+/* .receptenFilter {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 10% 0% auto;
+    margin: 30% auto 5% auto;
+} */
+.receptenGrid{
+    display: grid;
+    grid-template-areas:
+        "soort gerei";
+    grid-template-columns: 50% 50%;
+    grid-template-rows:1fr 1fr;
 }
 .receptenFilter h2{
     align-self: center;
+    margin: 0 auto
+   
 }
 .ingredienten{
    
@@ -30,10 +39,10 @@
 }
         /* DESKTOP BREAK */
 @media only screen and (min-width: 1024px){
-    .poep{
+    .receptenGrid{
         display: grid;
         grid-template-areas:
-        "tekst tekst",
+        "tekst tekst"
         "soort gerei";
         grid-template-columns: 1fr 1fr;
         grid-template-rows:1fr 1fr ;
