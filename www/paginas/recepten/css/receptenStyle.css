@@ -13,11 +13,14 @@
         "soort gerei";
     grid-template-columns: 50% 50%;
     grid-template-rows:1fr 1fr;
+    gap: 5rem;
 }
-.receptenFilter h2{
-    align-self: center;
-    margin: 0 auto
-   
+.receptenFilter{
+    margin-top: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;   
 }
 .ingredienten{
    
