@@ -11,12 +11,12 @@
 		
 		{ 
 			"id" : "2", 		
-			"title" : "Jamie's Super Food2", 							
+			"title" : "Simply Nigella", 							
 			"image" : "/images//boeken/simply-nigella/simply-nigella-boek.jpg", 						
 			"prijs" : "5", 		
-			"description" : "Heerlijk Gourmet Gold kattenvoer van Jamie.",
-			"buttonName" : "buttonboek2",
-			"author" 	: "Jamie Oliver"
+			"description" : "Op zoek naar recepten ontspannen en toch altijd bevredigend zijn?",
+			"buttonName" : "Simply Nigella",
+			"author" 	: "Nigella Lawson"
 		} ,
 		{ 
 			"id" : "3", 		
