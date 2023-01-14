@@ -29,6 +29,19 @@ h2{
     font-size: 4rem;
     text-transform: capitalize ;
 }
+article p:nth-child(2){
+    font-family: "Raleway_bold";
+    font-weight: bold;
+}
+.imageholder{
+    width: 100%;
+    overflow: hidden;
+}
+.imageholder img{
+    width: 70%;
+    margin: 0 auto;
+}
+
 .campagneHero{
     width: 100%;
 }
@@ -61,7 +74,9 @@ h2{
 }
 
 @media only screen and (max-width: 768px){
-
+    
+    
+    
     .player{
         max-width: 100vw;
         width: 100%;
@@ -80,6 +95,19 @@ h2{
       }
 }
 @media only screen and (min-width: 768px){
+    article .imageholder{
+        float: left;
+
+    }
+    .imageholder{
+        width: 50%;
+        margin: 0 2rem 2rem 0;
+        overflow: hidden;
+    }
+    .imageholder img{
+        width:100%;
+        margin: 0 auto;
+    }
     .kokenMetNigella{
         position: relative;
         display: grid;
