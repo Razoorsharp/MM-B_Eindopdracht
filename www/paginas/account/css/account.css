@@ -39,14 +39,22 @@ label{
 
 
 }
+.aanhefRadio{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.aanhefRadio div{
+    display:block;
+}
 @media only screen and (min-width: 768px){
   
-
+/* *NOTE: geen tijd meet voor styling door deadline */
 
 }
 @media only screen and (min-width: 1023px){
-
-
+/* *NOTE: geen tijd meet voor styling door deadline */
 
 }
 

@@ -19,18 +19,41 @@
         
     </section>
     <section class="hero">
-        <div class=shopTopHero>
-            <div id="shopHeroBackground"></div>
-            <a href="/index.html"><img id="homeHeroCuisineLogo" src="/images/cuisinelogo.png" alt="cuisine logo"></a>
-        
-            
+        <div class=homeHero>
+            <img id="homeHeroCuisineLogo" src="/images/cuisinelogo.png" alt="cuisine logo">
+        <div id="heroImageCarrousel">
+            <img id="homeHeroBackImage1" src="/images/hero/cuisinekeukenblad.jpg" alt="hero image/"> 
+            <img id="homeHeroBackImage2" src="/images/hero/hero-vrouw-leest.jpg" alt="hero image"/>
+            <img id="homeHeroBackImage3" src="/images/hero/heroeten.jpg" alt="hero image"/>  
         </div>
-</section>
-<section>
-  <div class="spacer">
+        <div id ="homeHeroMid" class=homeHeroMid>
+            <input id="homePaginationLeft" type="image" src="/images/previous.png">
+        <div class="homeHeroText">
+            <p class="heroPaginationIntro"></p>
+            <hr>
+            <h2 class="heroPaginationHead"></p>
+        </div>
+        <input id="homePaginationRight" type="image" src="/images/next.png">
+    </div>
+        <div class="heroPaginationCTA">
+            <button class="heroPaginaButton" id="heroPaginaButton">dfv</button>
+            <ul>
+                <li><input type="radio" name="homePagination" id="homePagination1"></li>
+                <li><input type="radio" name="homePagination"id="homePagination2"></li>
+                <li><input type="radio" name="homePagination"id="homePagination3"></li>
+            </ul>
+        </div>
+        
+    </div>
+    </section>
+    <div class="spacer">
+        <section class="shopFilter">
 
-  </div>
-</section>
+        </section>
+        <section>
+            <div class=""></div>
+        </section>
+    </div>
 
 
 
@@ -44,6 +67,7 @@ crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
 <script src="/js/nav.js"></script>
 <script src="/js/footer.js"></script>
+<script src="/js/heroPagination.js"></script>
 
 
 

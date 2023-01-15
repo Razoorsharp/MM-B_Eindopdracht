@@ -64,7 +64,7 @@ leftRightField.addEventListener('click', function(e){
             // -----------------------------------
     // switching function switches the pagination which in turn switch to an animaton in earlier eventlisteners
     function switchImg(i){
-        $.getJSON("./json/heropages.json", function(data){
+        $.getJSON("/json/heropages.json", function(data){
             $.each(data, function(key, value){
                 if(i == value.id){ // if the buttons were used, checkboxes need to change.                   
                     $("#homePagination"+ i).prop("checked", true); // with the indicator set, the pagination buttons need to be checked.            

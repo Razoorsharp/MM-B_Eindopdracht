@@ -53,14 +53,9 @@ h2{
 
 @media only screen and (min-width: 768px){
     #receptData{
-        
         width: 100%;
         height: 100%;
-       
     }
-     /* *NOTE : krijg het niet voor elkaar om te voorkomen 
-     dat de tekst in tablet en desktop over de footer gaan. zelfs zonder grid.. 
-     dit werkt op iedere andere pagina wel.  */
     .contentSpacer{
         display: grid;
         grid-template-areas:
@@ -88,10 +83,8 @@ h2{
     }
     .receptTekst h2{
         grid-area: bereid;
-    
     }
    .receptTekst p{
-       
         font-size: 2.5rem;
     }
 }

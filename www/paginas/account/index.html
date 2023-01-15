@@ -43,6 +43,17 @@
     <h1>Persoonlijke gegevens</h1>
     <div id="persoonlijkeGegevensForm">
     <form action="" method="get" id="pgf">
+        <label for="aanhef">Aanhef*:</label>
+        <div class="aanhefRadio">            
+            <div>
+                <input type="radio" id="deHeer" name="aanhef" value="De Heer" checked>
+                <label for="deHeer">De heer</label>
+            </div>
+            <div>
+                <input type="radio" id="mevrouw" name="aanhef" value="Mevrouw" checked>
+                <label for="mevrouw">Mevrouw</label>
+            </div>
+         </div>
         <div>
             <label for="voornaam">Voornaam</label>
             <input name="voornaam" id="voornaam" type="text" value="" required placeholder="Uw Voornaam"/>
@@ -76,10 +87,14 @@
             <input id="postcode" name="postcode" type="text" placeholder="Uw Postcode" required/>
         </div>
         <div> 
-           <input type="radio" id="nederland" name="land" value="nederland" checked>
-           <label for="nederland">Nederland*</label>
-           <input type="radio" id="anders" name="land" value="anders" checked>
-           <label for="anders">anders:</label>
+          <div>
+              <input type="radio" id="nederland" name="land" value="nederland" checked>
+            <label for="nederland">Nederland*</label>
+        </div class="landRadio"> 
+           <div>
+            <input type="radio" id="anders" name="land" value="anders" checked>
+            <label for="anders">anders:</label>
+           </div>
            <div>
             <input id="anders" type="text" placeholder=""/>
            </div>
@@ -96,22 +111,24 @@
 
 
       <h1>InlogGegevens</h1>
-      <form id="inlogForm" action="#">
+      <div id="inlogForm">
+      <form  action="get" id ="ww">
         <div>
             <label id="email">Email:</label>
-            <input for="email" type="text" placeholder="naam@provider.nl" required/>
+            <input for="email" name="email" type="text" placeholder="naam@provider.nl" required/>
         </div>
         <div>
             <label id="bevestigemail">Email Bevestigen:</label>
-            <input for="bevestigemail" type="text" placeholder="naam@provider.nl" required/>
+            <input for="bevestigemail" name="bevestigingemail" type="text" placeholder="naam@provider.nl" required/>
         </div>
         <div>
             <label id="wachtwoord">Huidig Wachtwoord</label>
-            <input for="wactwoord" type="password" placeholder="****" required/>
+            <input for="wactwoord" name="wachtwoord" type="password" placeholder="****" required/>
         </div>
         <button type="submit">Wachtwoord Wijzigen</button>
 
       </form>
+    </div>
 
     
 

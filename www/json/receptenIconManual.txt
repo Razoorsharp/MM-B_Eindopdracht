@@ -1,3 +1,6 @@
+NOTE: deze manier van werken is overbodig geworden gezien de 32px iconen volstaan. 
+toch een goed idee om er in te houden als werkens principe en proof of concept.
+
 Om de juiste iconen bij het gerecht te keijgen moet men rekening houdenmet de nummering van het gerei en hoofd ingredient. 
 Gezien de iconen genummerd zijn moet je het nummer invoeren zodat het juiste icoon tevoorschijn komt. 
 Voorbeeld
