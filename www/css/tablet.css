@@ -81,5 +81,9 @@
         align-self: flex-end;
         text-align: center;
     }
+    .homeOver ul{
+        margin: 0 auto 0 0;
+
+    }
 
 }
