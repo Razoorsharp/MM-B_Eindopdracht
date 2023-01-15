@@ -6,25 +6,23 @@
         height: auto;
         position: absolute;
        z-index: 2;
-       
         top: 0; 
       } 
       .topnav{
           position: relative;
-      }
-    
+      }    
       .fa-bars{
           display: none;
       }
    
-.linkContainer{
-    height: 8rem;
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    }
-    #mylinks:nth-child(){
-        width: 10%;
-    }
+    .linkContainer{
+        height: 8rem;
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        }
+        #mylinks:nth-child(){
+            width: 10%;
+        }
     .topnav a {
         color: white;
         padding: 1rem 10px;
@@ -32,7 +30,7 @@
         font-size: 17px;
         display: block;
         text-align: center;
-      }
+    }
     .navGlyphicons{
         position: absolute;
         top: 0;
@@ -43,21 +41,17 @@
     }
 
 
-#homeHeroCuisineLogo {
-    top: 5%;
-    width: 10%;
-    transform: translate(-50%, 0%);
-    z-index: 3;
-  
-}
-    
+    #homeHeroCuisineLogo {
+        top: 5%;
+        width: 10%;
+        transform: translate(-50%, 0%);
+        z-index: 3;
+    }    
     .boekenCard{
         width: 40vw;
-    }
-   
+    }   
     .homeRecepten{
         width: 90%;
-           
     }
         /* Boek Card positions */
     .boekenCardHolder{
@@ -139,20 +133,15 @@
     .receptCardHolder:nth-child(3) .receptCard{
         grid-area: "rCardThree";
         gap: 1rem;    
-        }
-      
-  
-
-    .receptText img {
+    }    .receptText img {
         max-width: 263px;
         height: 376px;
     }
+    .footerIcons img {
     
-  
+        width: 10%;
+        margin-bottom: 2%;
+    }
 }
 
-.footerIcons img {
-    
-    width: 10%;
-    margin-bottom: 2%;
-  }
+

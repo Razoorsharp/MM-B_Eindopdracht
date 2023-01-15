@@ -45,12 +45,12 @@ $.getJSON("/json/artikellen.json", function(data){
         artikellenMarkup += '<div class="artikelCard"><div class="cardSpacer"><div class="cardContent">';        
         artikellenMarkup += '<h2>'+ value.title +'</h2>';
         artikellenMarkup += '<p>'+ value.tekstPreview +'</p>';		
-        artikellenMarkup += '<img src="'+ value.image +'" alt="'+ value.title +'">';
+        artikellenMarkup += '<div class="artikelBGImg" style="background-image:url('+  value.image +')"></div>';
         artikellenMarkup += '<button>Volledig Artikel</button>';
         artikellenMarkup += '</div></div></div></a>';    
     });
     $('.artikelCardHolder').append(artikellenMarkup);
-});
+});// einde Json
 
 // recepten Card ceator @note: nog afmaken
 $.getJSON("./json/recepten.json", function(data){

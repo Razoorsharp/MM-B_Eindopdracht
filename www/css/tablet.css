@@ -3,90 +3,83 @@
 
 
 
-.boekenCard{  
-    margin: 2rem auto;
-    width: 100%;
-    max-width: unset;
-    height: 80vh;
-    background-origin: center;
-    background-position-y: center;
-    background-position-x: center;
-}
-.boekenCardHolder{
-    display: flex;
-   
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+    .boekenCard{  
+        margin: 2rem auto;
+        width: 100%;
+        max-width: unset;
+        height: 80vh;
+        background-origin: center;
+        background-position-y: center;
+        background-position-x: center;
+    }
+    .boekenCardHolder{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-.artikelCard{
-    /* max-width: 750px; */
-}
-.homeRecepten{
-    width: 90%;
-}
-
-.receptCard{
-    display: flex;
-    width: 100%; 
-    max-width: 400px;
- }
- .receptImage{
-    
-    margin:0 auto;  
- }
- .receptTime30:after{
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    transform: translate(10%, 10%);
-    content: "30 min";
-    font-size: 1rem;
-    text-align: right;
-    width: 20%;
-    right: 0rem;
- }
- .receptTime60:after{   
-    transform: translate(0%, 20%);
-    content: "60 min";
-    font-size: 1rem;
-    text-align: right;
- }
- .receptTime120:after{
-    transform: translate(0%, 20%);
-    content: "120 min";
-    font-size: 1rem;
-    text-align: right;
- }
-
-
-
-.receptCardHolder{
-    display: grid;
-    grid-template-areas: "rCardOne rCardTwo";
-    gap: 1rem;   
-}
-.receptCardHolder:nth-child(1) .receptCard{
-    grid-area: "rCardOne";
+    .artikelCard{
+        /* max-width: 750px; */
+    }
+    .homeRecepten{
+        width: 90%;
+    }
+    .receptCard{
+        display: flex;
+        width: 100%; 
+        max-width: 400px;
+    }
+    .receptImage{
+        margin:0 auto;  
+    }
+    .receptTime30:after{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        transform: translate(10%, 10%);
+        content: "30 min";
+        font-size: 1rem;
+        text-align: right;
+        width: 20%;
+        right: 0rem;
+    }
+    .receptTime60:after{   
+        transform: translate(0%, 20%);
+        content: "60 min";
+        font-size: 1rem;
+        text-align: right;
+    }
+    .receptTime120:after{
+        transform: translate(0%, 20%);
+        content: "120 min";
+        font-size: 1rem;
+        text-align: right;
+    }
+    .receptCardHolder{
+        display: grid;
+        grid-template-areas: "rCardOne rCardTwo";
+        gap: 1rem;   
+    }
+    .receptCardHolder:nth-child(1) .receptCard{
+        grid-area: "rCardOne";
+        gap: 1rem;    
+        }
+    .receptCardHolder:nth-child(2) .receptCard{
+    grid-area: "rCardTwo";
     gap: 1rem;    
     }
-.receptCardHolder:nth-child(2) .receptCard{
-grid-area: "rCardTwo";
-gap: 1rem;    
-}
-.homeOver img{
-    float: left;
-    width:30%;
-}
-.homeOver p:nth-child(n+5) {
-    
-    margin-bottom: 1rem;
-    align-self: flex-end;
-    text-align: center;
-}
+    .homeOver img{
+        float: left;
+        width:30%;
+    }
+    .homeOver p:nth-child(n+5) {
+        margin-bottom: 1rem;
+        align-self: flex-end;
+        text-align: center;
+    }
 
 }
