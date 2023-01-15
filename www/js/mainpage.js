@@ -15,9 +15,9 @@ if (!window.matchMedia('(min-width: 768px)').matches) {
 $.getJSON("/json/boeken.json", function(data){
     var boekenMarkup = '';
     var bookCount =0;
-    console.log(data);
+    
     $.each(data, function(key, value){
-        console.log(value);
+        
         if (bookCount <2){
             bookCount++
               
@@ -38,9 +38,9 @@ $.getJSON("/json/boeken.json", function(data){
 // Artikellen Card ceator
 $.getJSON("/json/artikellen.json", function(data){
     var artikellenMarkup = '';
-    console.log(data);
+    
     $.each(data, function(key, value){
-        console.log(value);
+        
         artikellenMarkup += '<a href="'+ value.url +'">'
         artikellenMarkup += '<div class="artikelCard"><div class="cardSpacer"><div class="cardContent">';        
         artikellenMarkup += '<h2>'+ value.title +'</h2>';
@@ -58,7 +58,6 @@ $.getJSON("./json/recepten.json", function(data){
     var receptCount = 0;
     $.each(data, function(key, value){
         receptCount++;
-        console.log("recept count op = "+receptCount)
         if(receptCount == 4)return; // op de hoofd pagina willen we maar 3 recepten zien. dus kappen we hem hier af
         // sorteer functie moet nog gebouwd worden op basis van json datum van meest recente toegevoegd.  
 
@@ -124,7 +123,6 @@ $.getJSON("./json/recepten.json", function(data){
  // Recepten click
 
  $(document).on('click', '.receptCard', function(){
-    console.log(this.id);
     var url = '/paginas/recepten/show.html?receptId='+ this.id;
     $(location).prop('href', url);
   });

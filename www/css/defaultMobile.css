@@ -391,6 +391,7 @@ color: #d99a3f;
     box-shadow: 5px -5px #88888850
 }
  /* Recepten card */
+  /* *NOTE: Div's en ipv img background style gebruiken nog editen in de recepten structuur gelijk de artikellen, alleen geen tijd meer op zondag voor deadline */
 .receptCardHolder{
     width:80vw;
     margin: 0 auto;

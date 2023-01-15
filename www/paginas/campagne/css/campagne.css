@@ -4,6 +4,11 @@
 section h1{
     margin: 0;
 }
+/* spacer gebruikt om alle content van de randen af te houden gezien margin per onderdeel soms niet lekker werkt, dit is een beter "raamwerk" */
+.spacer{
+    width: 85%;
+    margin: 0 auto;
+}
 .campagneTopHero{
     height: 80vh;
     margin: 2rem 0;
@@ -150,6 +155,7 @@ article p:nth-child(2){
     .kokenMetNigellaRegister{
         grid-area: button;
     }
+    
 
 
 }
@@ -194,12 +200,9 @@ article p:nth-child(2){
         display: unset;
     }
    
+   
 /* *NOTE: geen tijd meer voor verdere styling door deadline */
 
 
 }
 
-.spacer{
-    width: 95%;
-    margin: 0 auto;
-}

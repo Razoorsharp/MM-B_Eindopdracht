@@ -3,9 +3,9 @@ var d = document;
 $(document).ready(function(){
 $.getJSON("/json/artikellen.json", function(data){
     var artikellenMarkup = '';
-    console.log(data);
+    
     $.each(data, function(key, value){
-        console.log(value);
+        
         artikellenMarkup += '<a href="'+ value.url +'">'
         artikellenMarkup += '<div class="artikelCard"><div class="cardSpacer"><div class="cardContent">';        
         artikellenMarkup += '<h2>'+ value.title +'</h2>';

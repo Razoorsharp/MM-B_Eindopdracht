@@ -33,7 +33,7 @@ $(document).ready(function(){
         const formPGDataObj = {};
         //myFormData.forEach((value, key) => (formDataObj[key] = value)); // alle values sorteren. 
         myFormDataPG.forEach((value, key) => {
-            console.log(value, key);
+            
             localStorage.setItem(key, value);// sla de gegevens op in local storage (bij gebrek aan SQL en PHP voor DB, wat er mee te doen verder onduidelijk. )
         });
         
@@ -60,7 +60,6 @@ $(document).ready(function(){
         const formWWDataObj = {};
         //myFormData.forEach((value, key) => (formDataObj[key] = value)); // alle values sorteren. 
         myWWFormData.forEach((value, key) => {
-            console.log(value, key);
             localStorage.setItem(key, value);// sla de gegevens op in local storage (bij gebrek aan SQL en PHP voor DB, wat er mee te doen verder onduidelijk. )
         });
         

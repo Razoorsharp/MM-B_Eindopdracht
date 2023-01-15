@@ -1,5 +1,5 @@
 $(document).ready(function(){
-console.log("running");
+
 // if(!d.getElementById("ingredientenHolder"))return false;
 var d = document;
 var ingredientenFilter = d.getElementById('ingredientenHolder');
@@ -57,7 +57,7 @@ $.getJSON("../../json/recepten.json", function(data){
         let soortGerecht = value.hoofdIngredient;
         let bereidTijd = value.tijd;
         let image = "../../" + value.image;
-        console.log(image);
+        
         // icons function, berei gerecht en time bepaald door nummers in de Json, zie handleiding. 
         receptenMarkup += receptIconPlacement(soortGerei,soortGerecht,bereidTijd); 
         receptenMarkup += '</div>';
@@ -74,7 +74,7 @@ $.getJSON("../../json/recepten.json", function(data){
        receptenMarkup += ' <button>'+ value.buttonTekst +'</button>';
        receptenMarkup += '</div></div></div></div>';    
     });
-    console.log(receptenMarkup);
+    
     $('.receptCardHolder').append(receptenMarkup);
    
             //----------------
@@ -82,26 +82,26 @@ $.getJSON("../../json/recepten.json", function(data){
             //-----------------
     $('.receptenFilter input').on('change', function(e){ // zoek functie zelf
 		//??this?? de checkbox  // check nog eens wat $(this) en alleen This weergeeft. rijke html jquery ?
-        console.log("selected");
+       
 		var deCheckbox = $(this)
-        console.log("de checkbox " + deCheckbox);
+        
 		var waarde = deCheckbox.val();
-        console.log("waarde " + waarde);
+       
 		var selected = deCheckbox.is(':checked'); // true/false
-        console.log("selected" + selected);
+        
         
 
 		var aantalSoort = $('[name=ingredientFilter]:checked').length; // aantal producten nummer variabel
-        console.log("aantal soort " + aantalSoort)
+        
 		var aantalGerei = $('[name=gereiFilter]:checked').length; // 0 tm 5
 
-		// console.log(waarde, selected);
+	
        
 		$('.receptCard').each(function(){
             
 			var card = $(this);
             
-            // console.log(card.attr('data-soort'));
+            
 
 			if(card.attr('data-gerei') == waarde){
 				// Ja de Checkbox hoort bij deze card
@@ -124,16 +124,16 @@ $.getJSON("../../json/recepten.json", function(data){
 			if (card.attr('data-soort-flag') == 'false' && aantalSoort != 0){
                
 				s_show = false;
-                console.log("s show is? " + s_show);
+                
 			}
 
 			if (card.attr('data-gerei-flag') == 'false' && aantalGerei != 0){
 				g_show = false;
-                console.log("s show is? " + s_show);
+                
 			}
 
             if(!card.attr('data-soort-flag') == 'true' && aantalSoort != 0){
-                console.log("kaart attr is false") ;
+                
             }
 
 			if (s_show && g_show){
@@ -147,7 +147,7 @@ $.getJSON("../../json/recepten.json", function(data){
 
 	}); // eindechange event
  }).done(function() {
-    console.log( "second success" );
+    
   }); // END JSON REQUESTS
 
        // receptIconPLacement function. i = Sooftgerecht in de recepten constructor. en plaatst het benodigde icoon per recept card er in. 
@@ -164,9 +164,9 @@ $.getJSON("../../json/recepten.json", function(data){
         return iconGerei+iconGerecht+iconTijd;
         
     }
-    console.log("ik wil clikken");
+    
     $(document).on('click', '.receptCard', function(){
-        console.log(this.id);
+        
         var url = '/paginas/recepten/show.html?receptId='+ this.id;
         $(location).prop('href', url);
       });

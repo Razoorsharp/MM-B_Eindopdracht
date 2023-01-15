@@ -18,11 +18,11 @@ function valideerForm (welkVeld){
     if (welkVeld.id == "naam"){
         var pattern = /^[a-z0-9\s]{4,50}$/i;
         valid = pattern.test(naam.value); // test waarde van het veld, dit is standaard functie van Js. 
-        console.log("ik check naam");
+       
     } else if (welkVeld.id == "email"){
         var pattern = /^[a-z0-9-_]{2,50}@[a-z]{2,50}.[a-z]{2,50}$/i;
         valid = pattern.test(email.value); // test waarde van het veld, dit is standaard functie van Js. 
-        console.log("ik ben email");
+        
         
     }
     createFeedback(welkVeld, valid);
@@ -40,7 +40,7 @@ function createFeedback(welkVeld, status){
     }else{
         welkVeld.style.backgroundColor = 'rgba(255,0,0,0.2)';
         welkVeld.style.borderColor = 'rgb(255,0,0)';
-       console.log("error"+ welkVeld.name);
+       
         veld.style.display = 'block';        
         }
 }

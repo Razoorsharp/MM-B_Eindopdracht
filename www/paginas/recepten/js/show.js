@@ -12,12 +12,11 @@ $(document).ready(function () {
     // 
         function GetParameterValues(param) { // functie om te bepalen welk ID er in de URL meegegeven wordt
         var url = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&'); // splits na vraagteken
-            console.log(url);
+            
             for (var i = 0; i < url.length; i++) {
             var urlparam = url[i].split('='); // splitsen na de =
                 if (urlparam[0] == param) { // ingegeven parameter moet gelijk zijn
-                console.log(urlparam[0]); // kijken wat eerste deel is 
-                console.log(urlparam[1]); // kijken wat het 2e deel is en direct de ID
+                
                 return urlparam[1]; // return de ID naar var receptId
                 
                 }
@@ -33,7 +32,7 @@ $(document).ready(function () {
            
             }).done(function(data){
                 // de rest in de done gedaan zodat hij niet meer streamed begreep ik van Harald, of verkeerd begrepen. 
-            console.log(data);
+   
             $.each(data, function(key, value){
                 if(value.id == receptId){
                     document.title = value.title;
@@ -43,9 +42,6 @@ $(document).ready(function () {
                 
                     $("#receptHeroBackground").css("background-image", "url(" + backgroundimageUrl + ")"); // voeg juiste image in de hero toe
                     $(".receptHero").html('<h1 class="receptHeroTitle">'+ value.title +'</h1>') // voeg juiste tietel in de hero toe. 
-
-                    console.log("ik ben recept "+ value.title);
-                    console.log(value);
                     var v = value; // verkort van telkens value schrijven
                     var receptMarkup = ''; // begin met maken van markup voor recept data
 
