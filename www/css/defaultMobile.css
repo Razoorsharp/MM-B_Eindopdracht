@@ -525,6 +525,13 @@ color: #d99a3f;
     margin:  1rem auto;
     
 }
+.homeOver h2{
+    margin-bottom: 1rem;
+    color: #418c9f;
+    font-family: "Raleway-bold";
+    align-self: flex-start;
+
+}
 .homeOver article{
     width: 90%;
     display: flex;
@@ -537,6 +544,10 @@ color: #d99a3f;
     width: 90%;
     align-self: center;
    
+
+}
+.homeOver ul{
+    list-style-type: circle;
 
 }
 .homeOver em{

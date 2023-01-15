@@ -80,7 +80,13 @@ gap: 1rem;
 }
 .homeOver img{
     float: left;
-    width:50%;
+    width:30%;
+}
+.homeOver p:nth-child(n+5) {
+    
+    margin-bottom: 1rem;
+    align-self: flex-end;
+    text-align: center;
 }
 
 }

@@ -14,7 +14,7 @@
     "head" : "Alle boeken<br>Smaken naar meer!", 						
     "buttonText" : "Nieuwe boeken", 		
     "img" : "images/heroimages/2.jpg",
-    "url" : "paginas/boeken/index.html"     
+    "url" : "paginas/shop/index.html"     
 },
 { 
     "id" : "3", 		

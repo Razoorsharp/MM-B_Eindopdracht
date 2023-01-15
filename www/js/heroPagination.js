@@ -72,7 +72,7 @@ leftRightField.addEventListener('click', function(e){
                     $(heroHead).html(value.head);
                     $(heroButton).html(value.buttonText);
                     heroButton.addEventListener("click", function(e){
-                        window.open(value.url);
+                        window.open(value.url,"_self");
                     });
                 } 
                 if(page1.checked){

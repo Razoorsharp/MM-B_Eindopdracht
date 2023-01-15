@@ -1,16 +1,18 @@
 [
 			{ 
-			"id" : "1", 		
-			"title" : "Jamie's Super Food1", 							
+			"id" : "1", 	
+			"uitgelicht" : 1,	
+			"title" : "Jamie's Super Food", 							
 			"image" : "/images/boeken/jamies-superfood/jamies-super-food.jpg", 						
 			"prijs" : "5", 		
-			"description" : "Heerlijk Gourmet Gold kattenvoer van Jamie.",
-			"buttonName" : "buttonboek1",
+			"description" : "Heerlijke gerechten van Jamie Oliver die goed vullen",
+			"buttonName" : "Jamie's Super Food",
 			"author" 	: "Jamie Oliver"
 		},
 		
 		{ 
-			"id" : "2", 		
+			"id" : "2", 
+			"uitgelicht" : 1,		
 			"title" : "Simply Nigella", 							
 			"image" : "/images//boeken/simply-nigella/simply-nigella-boek.jpg", 						
 			"prijs" : "5", 		
@@ -19,7 +21,8 @@
 			"author" 	: "Nigella Lawson"
 		} ,
 		{ 
-			"id" : "3", 		
+			"id" : "3", 	
+			"uitgelicht" : 0,	
 			"title" : "Nigella Express", 							
 			"image" : "/images//boeken/nigella-express/nigella-express.jpg", 						
 			"prijs" : "29,50", 		

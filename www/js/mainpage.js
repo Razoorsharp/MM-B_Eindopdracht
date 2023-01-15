@@ -41,12 +41,13 @@ $.getJSON("/json/artikellen.json", function(data){
     console.log(data);
     $.each(data, function(key, value){
         console.log(value);
+        artikellenMarkup += '<a href="'+ value.url +'">'
         artikellenMarkup += '<div class="artikelCard"><div class="cardSpacer"><div class="cardContent">';        
         artikellenMarkup += '<h2>'+ value.title +'</h2>';
         artikellenMarkup += '<p>'+ value.tekstPreview +'</p>';		
         artikellenMarkup += '<img src="'+ value.image +'" alt="'+ value.title +'">';
         artikellenMarkup += '<button>Volledig Artikel</button>';
-        artikellenMarkup += '</div></div></div>';    
+        artikellenMarkup += '</div></div></div></a>';    
     });
     $('.artikelCardHolder').append(artikellenMarkup);
 });
